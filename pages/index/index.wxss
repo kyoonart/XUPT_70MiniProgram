@@ -1,4 +1,10 @@
 /**index.wxss**/
+.container{
+ background-image:url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png?q-sign-algorithm=sha1&q-ak=AKIDsYbLIFD-60FX0zrkviVnZO37Jm6S_8Zm2KZdW13aai5TUpMRJM-yBbiV3qINpVMo&q-sign-time=1581849213;1581852813&q-key-time=1581849213;1581852813&q-header-list=&q-url-param-list=&q-signature=967cecba3ba140fcb0fef07dcaa642ff7dce9c20&x-cos-security-token=EaauK5s8CtkLsxACuMhARiprOb67Dr29792ff6facfaad901fe26a90f0a7f76f1DD21NmMWizpK_DHFTRZNntdIT6J08xrvh3rEabxjMup1c9YlxHYQagXnGppX1CcCuOBqjyOWDLPt6OD80B5GSEMHOLDtFBNimjWpNRQgxJhnuplBHBk76mYMezI_tK3mT2U4H2oa7FBoXdBTw6vVpfT3s9tlL5hnaMDpZayfJ_c");
+  background-repeat:no-repeat; 
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
