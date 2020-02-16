@@ -7,9 +7,25 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    inShool: true
   },
   //事件处理函数
+  inShoolBind: function() {
+    if (this.data.inShool === false) {
+      this.setData({
+        inShool: !this.data.inShool
+      })
+    }
+  },
+  unShoolBind: function(){
+    console.log(this.data.inShool)
+    if (this.data.inShool === true){
+      this.setData({
+        inShool: !this.data.inShool
+      })
+    }
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

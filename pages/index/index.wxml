@@ -1,13 +1,77 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='userinfo-school' wx:if="{{ !inShool }}">
+    <view bindtap='inShoolBind' style='margin-right:80rpx;' class='userinfo-unschool'>毕业校友</view>
+    <view style='border-bottom: 0.5px solid #fff;'>在校校友</view>
   </view>
+  <view class='userinfo-school' wx:if="{{ inShool }}">
+    <view style='margin-right:80rpx;border-bottom: 0.5px solid #fff;'>毕业校友</view>
+    <view bindtap='unShoolBind' class='userinfo-unschool'>在校校友</view>
+  </view>
+  <view style='height:500rpx;' wx:if="{{ inShool }}">
+    <view class="weui-cells weui-cells_form" style='background:rgba(255,255,255,.3);border-radius:5px;'>
+      <view class="weui-cell" style="padding:20rpx;">
+        <view class="weui-cell__hd">
+          <image style='height:30px;width:30px;' src='../../image/icon/info.png'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder-style="color:#ccc;font-size:26rpx;padding-left:20rpx;" placeholder="姓名" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_form" style='background:rgba(255,255,255,.3);border-radius:5px;'>
+      <view class="weui-cell" style="padding:20rpx;">
+        <view class="weui-cell__hd">
+          <image style='height:30px;width:30px;' src='../../image/icon/study.png'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder-style="color:#ccc;font-size:26rpx;padding-left:20rpx;" placeholder="学号" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style='height:500rpx;' wx:if="{{ !inShool }}">
+       <view class="weui-cells weui-cells_form" style='background:rgba(255,255,255,.3);border-radius:5px;'>
+      <view class="weui-cell" style="padding:20rpx;">
+        <view class="weui-cell__hd">
+          <image style='height:30px;width:30px;' src='../../image/icon/info.png'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder-style="color:#ccc;font-size:26rpx;padding-left:20rpx;" placeholder="姓名" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_form" style='background:rgba(255,255,255,.3);border-radius:5px;'>
+      <view class="weui-cell" style="padding:20rpx;">
+        <view class="weui-cell__hd">
+          <image style='height:30px;width:30px;' src='../../image/icon/study.png'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder-style="color:#ccc;font-size:26rpx;padding-left:20rpx;" placeholder="学号" />
+        </view>
+      </view>
+    </view>
+     <view class="weui-cells weui-cells_form" style='background:rgba(255,255,255,.3);border-radius:5px;'>
+      <view class="weui-cell" style="padding:20rpx;">
+        <view class="weui-cell__hd">
+          <image style='height:30px;width:30px;' src='../../image/icon/book.png'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder-style="color:#ccc;font-size:26rpx;padding-left:20rpx;" placeholder="专业" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn" style='width:520rpx;background-color:#fff;color:#0142AA;font-weight:bold;' type="primary">
+    立即验证
+  </button>
 </view>
