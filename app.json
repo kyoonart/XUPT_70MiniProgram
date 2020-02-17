@@ -6,8 +6,11 @@
         "pages/home/index",
         "pages/interactive/index",
         "pages/seventy/index",
-        "pages/my/index"
-
+        "pages/my/index",
+        "pages/summary/index",
+        "pages/history/index",
+        "pages/leader/index",
+        "pages/profile/index" 
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -47,7 +50,5 @@
             }
         ]
     },
-
-
     "sitemapLocation": "sitemap.json"
 }
