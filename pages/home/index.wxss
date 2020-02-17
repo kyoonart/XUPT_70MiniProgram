@@ -1,3 +1,10 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .swiper swiper {
   padding: 10rpx 30rpx;
 }
@@ -24,7 +31,6 @@
   height: 30vm;
   margin-left: 75rpx;
   margin-top: 16rpx;
-  overflow: hidden;
 }
 .index-navbar view {
   width: 33.33%;
@@ -35,37 +41,41 @@
   justify-content: center;
   justify-items: center;
   margin-top: 18rpx;
+  position: relative;
 }
 .index-navbar view .navbar_img {
-  width: 33.33%;
+  height: 60rpx;
+  width: 60rpx;
 }
 .index-navbar view text {
   font-size: 24rpx;
   margin-top: 5rpx;
   color: #636363;
+  position: relative;
+  left: -14rpx;
 }
 .index_bigimg {
   padding: 18rpx 30rpx;
 }
-view.index_news view.news_title {
+.index_news .news_title {
   text-align: center;
 }
-view.index_news view.news_title text {
+.index_news .news_title text {
   color: #014A95;
   font-size: 26rpx;
   font-weight: 550;
 }
-view.index_news .news_content {
+.index_news .news_content {
   display: flex;
   padding-top: 10rpx;
   padding-left: 30rpx;
 }
-view.index_news .news_content .news_img {
+.index_news .news_content .news_img {
   width: 280rpx;
   height: 200rpx;
   overflow: hidden;
 }
-view.index_news .news_content .news_detail {
+.index_news .news_content .news_detail {
   flex: 10;
   position: relative;
   margin-right: 16rpx;
@@ -73,12 +83,12 @@ view.index_news .news_content .news_detail {
   height: 200rpx;
   box-shadow: 2rpx 2rpx 2rpx 1rpx rgba(191, 191, 193, 0.9);
 }
-view.index_news .news_content .news_detail .detail_title {
+.index_news .news_content .news_detail .detail_title {
   font-size: 28rpx;
   color: #014A95;
   font-weight: 400;
 }
-view.index_news .news_content .news_detail .detail_main {
+.index_news .news_content .news_detail .detail_main {
   color: #8D8D8D;
   font-size: 20rpx;
   overflow: hidden;
@@ -87,7 +97,7 @@ view.index_news .news_content .news_detail .detail_main {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-view.index_news .news_content .news_detail .detail_data {
+.index_news .news_content .news_detail .detail_data {
   color: #8D8D8D;
   font-size: 18rpx;
   position: absolute;

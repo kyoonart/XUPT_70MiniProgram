@@ -1,3 +1,10 @@
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
 .swiper {
     swiper{
         padding: 10rpx 30rpx;
@@ -26,7 +33,6 @@
     height: 30vm;
     margin-left: 75rpx;
     margin-top:16rpx;
-    overflow: hidden;
     view {
         width: 33.33%;
         height: 125rpx;
@@ -36,21 +42,27 @@
         justify-content: center;
         justify-items: center;
         margin-top:18rpx;
+        position: relative;
         .navbar_img{
-           width: 33.33%;
+        //    width: 33.33%;
+           height: 60rpx;
+           width: 60rpx;
         }
-      text {
-     font-size: 24rpx;
-    margin-top: 5rpx;  
-    color: #636363;   
- }
+     text {
+        font-size: 24rpx;
+        margin-top: 5rpx;  
+        color: #636363; 
+        position: relative;
+        left: -14rpx;
+        }
+    
     }
   }
   .index_bigimg{
      padding: 18rpx 30rpx;
   }
-  view.index_news {
-    view.news_title {
+  .index_news {
+    .news_title {
         text-align: center;
       text {
     color: #014A95;
@@ -113,3 +125,4 @@
         font-size: 20rpx;
       }
   }
+  

@@ -25,7 +25,7 @@
 	</view>
 </view>
 <!-- 导航 -->
-<view class="index-navbar">
+<view class="index-navbar clearfix">
 	<view>
 	<view class="navbar_img">
 			<image src="../../image/icon/school.png" mode="widthFix" />
