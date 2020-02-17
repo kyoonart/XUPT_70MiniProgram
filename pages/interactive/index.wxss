@@ -1,1 +1,94 @@
-/* pages/interactive/index.wxss */
+.container {
+    padding: 10rpx 30rpx;
+}
+
+.banner {
+    display: flex;
+    width: 690rpx;
+    margin-left: 68rpx;
+    margin-top: 44rpx;
+}
+
+.banner .banner_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.banner .banner_content .content_img {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.banner .banner_content .content_title {
+    margin-left: -20rpx;
+}
+
+.banner .banner_content .content_title text {
+    color: #636363;
+    font-size: 24rpx;
+}
+
+.page .page_person {
+    padding-left: 30rpx;
+    margin-top: 30rpx;
+}
+
+.page .page_person .person_header .person_icon {
+    width: 60rpx;
+    height: 60rpx;
+    padding-right: 10rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page .page_person .person_header .person_icon text {
+    color: #3E3E3E;
+    font-size: 30rpx;
+}
+
+.page .page_person .page_address {
+    margin-top: -8rpx;
+    padding-right: 30rpx;
+}
+
+.page .page_person .page_address text {
+    color: #8D8D8D;
+    font-size: 24rpx;
+}
+
+.page .page_detail .detail_img {
+    padding: 0 30rpx;
+}
+
+.page .page_detail .detail_set {
+    padding: 0 30rpx;
+    display: flex;
+}
+
+.page .page_detail .detail_set .set {
+    flex: 1;
+    height: 30rpx;
+}
+
+.page .page_detail .detail_set .set .share {
+    width: 31rpx;
+    height: 32rpx;
+    display: inline-block;
+}
+
+.page .page_detail .detail_set .set text {
+    color: #8D8D8D;
+    font-size: 20rpx;
+    margin-left: 10rpx;
+}
+
+.middle {
+    margin-left: -320rpx;
+}
+
+.left {
+    margin-right: -250rpx;
+}

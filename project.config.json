@@ -59,6 +59,13 @@
 					"pathName": "pages/home/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/interactive/index",
+					"pathName": "pages/interactive/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
