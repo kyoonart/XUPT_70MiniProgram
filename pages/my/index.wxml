@@ -1,2 +1,27 @@
-<!--pages/my/index.wxml-->
-<text>pages/my/index.wxml</text>
+<!-- index.wxml -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class='user-infomation'>
+  <view>账号信息</view>
+  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+</view>
+
+<view class='user-infomation'>
+  <view>基本信息</view>
+  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+</view>
+
+<view class='user-infomation'>
+  <view>联系方式</view>
+  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+</view>

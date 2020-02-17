@@ -1,1 +1,29 @@
-/* pages/seventy/index.wxss */
+.container {
+    padding: 10rpx 30rpx;
+}
+
+
+.img-container {
+  position: relative;
+  display: block;
+    padding: 10rpx 30rpx;
+}
+
+.news_title {
+  color: #014A95;
+  text-align: center;
+}
+
+.img-text{
+  height: 60rpx;  
+  position: absolute;
+  font-size:24rpx;
+  bottom: 24rpx;
+  text-align: center;
+  color: #fff;
+  background:rgba(255,255,255,.3);
+}
+
+.img-textarea{
+  padding: 10rpx;
+}
