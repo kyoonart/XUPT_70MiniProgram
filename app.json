@@ -9,7 +9,11 @@
     "pages/logs/logs",
     "pages/interactive/index",
     "pages/seventy/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/summary/index",
+    "pages/history/index",
+    "pages/leader/index",
+    "pages/profile/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -51,56 +55,4 @@
     ]
   },
   "sitemapLocation": "sitemap.json"
-    "pages": [
-        "pages/index/index",
-        "pages/login/login",
-        "pages/logs/logs",
-        "pages/home/index",
-        "pages/interactive/index",
-        "pages/seventy/index",
-        "pages/my/index",
-        "pages/summary/index",
-        "pages/history/index",
-        "pages/leader/index",
-        "pages/profile/index" 
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#014A95",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "white"
-    },
-    "tabBar": {
-        "color": "#ccc9cc",
-        "selectedColor": "#014A95",
-        "backgroundColor": "#fffeff",
-        "position": "bottom",
-        "borderStyle": "black",
-        "list": [{
-                "pagePath": "pages/home/index",
-                "text": "首页",
-                "iconPath": "./image/icon/home.png",
-                "selectedIconPath": "./image/icon/homeactive.png"
-            },
-            {
-                "pagePath": "pages/interactive/index",
-                "text": "互动",
-                "iconPath": "./image/icon/interactive.png",
-                "selectedIconPath": "./image/icon/interactiveactive.png"
-            },
-            {
-                "pagePath": "pages/seventy/index",
-                "text": "70周年",
-                "iconPath": "./image/icon/seventy.png",
-                "selectedIconPath": "./image/icon/seventyactive.png"
-            },
-            {
-                "pagePath": "pages/my/index",
-                "text": "我的",
-                "iconPath": "./image/icon/my.png",
-                "selectedIconPath": "./image/icon/myactive.png"
-            }
-        ]
-    },
-    "sitemapLocation": "sitemap.json"
 }
