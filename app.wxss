@@ -1,12 +1,32 @@
 /**app.wxss**/
-@import 'thirdparty/weui.wxss';
 
+@import 'thirdparty/weui.wxss';
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+page {
+    background-color: #F7F7F7;
+}
+
+image {
+    width: 100%;
+}

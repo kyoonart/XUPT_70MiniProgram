@@ -1,0 +1,84 @@
+<!-- 轮播图 -->
+<view class="swiper">
+	<swiper
+	 autoplay="{{true}}"
+	 indicator-dots="{{true}}"
+	 circular="{{true}}"
+	 indicator-color="rgba(255, 255, 255, .6)"
+	 indicator-active-color="#FFFFFf"
+	>
+		<swiper-item>
+			<image src="../../image/icon/swiper.png" mode="widthFix" />
+		</swiper-item>
+		<swiper-item>
+			<image src="../../image/icon/swiper.png" mode="widthFix" />
+		</swiper-item>
+	</swiper>
+</view>
+<!-- 通知 -->
+<view class="index_info">
+	<view class="info_content">
+		<view class="info_img">
+			<image src="../../image/icon/speak.png" mode="widthFix" />
+		</view>
+		<text>西安邮电大学 70 周年校庆详情~~~</text>
+	</view>
+</view>
+<!-- 导航 -->
+<view class="index-navbar">
+	<view>
+	<view class="navbar_img">
+			<image src="../../image/icon/school.png" mode="widthFix" />
+		</view>
+		<text>学校概况</text>
+	</view>
+	<view>
+		<view class="navbar_img">
+			<image src="../../image/icon/news.png" mode="widthFix" />
+		</view>
+		<text>学校新闻</text>
+	</view>
+	<view>
+		<view class="navbar_img">
+			<image src="../../image/icon/map.png" mode="widthFix" />
+		</view>
+		<text>返校指南</text>
+	</view>
+	<view>
+		<view class="navbar_img">
+			<image src="../../image/icon/mcs.png" mode="widthFix" />
+		</view>
+		<text>我的校友</text>
+	</view>
+	<view>
+	<view class="navbar_img">
+			<image src="../../image/icon/tac.png" mode="widthFix" />
+		</view>
+		<text>科研研发</text>
+	</view>
+	<view>
+	<view class="navbar_img">
+			<image src="../../image/icon/safe.png" mode="widthFix" />
+		</view>
+		<text>校友验证</text>
+	</view>
+</view>
+<!-- 大图 -->
+<view class="index_bigimg">
+    <image src="../../image/icon/bar.png"  mode="widthFix"/>
+</view>
+<view class="index_news">
+    <view class="news_title"><text>······新闻中心······</text></view>
+   <view class="news_content">
+        <view class="news_img"><image src="../../image/icon/zls.png" mode="widthFix" /></view>
+        <view class="news_detail">
+        <view class="detail_title">我校召开疫情防控工作部署会</view>
+        <view class="detail_main">学校召开新型冠状病毒感染肺炎疫情防控工 作领导小组工作会议，进一步研究细化了学 校疫情防控工作方案和应急预</view>
+        <view class="detail_data">2019/12/20</view>
+   </view>
+   </view>
+   </view>
+<view class="index_footer">
+    <text>查看更多</text>
+</view>
+  
