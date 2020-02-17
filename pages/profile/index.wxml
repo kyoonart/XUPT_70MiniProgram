@@ -1,0 +1,105 @@
+<view class="header">
+	<image src="../../image/icon/bar2.png" mode="widthFix" />
+</view>
+<view class="index_news">
+	<view class="news_title">
+		<text>······学校简介······</text>
+	</view>
+	<view class="news_content">
+		<view class="news_img">
+			<image src="../../image/icon/dahuo.png" mode="widthFix" />
+		</view>
+		<view class="news_detail">
+			<view class="detail_title">学校简介</view>
+			<view class="detail_main">西安邮电大学是一所以工为主，以信息科学
+				技术为特色，工、管、理、经、文、法、艺
+				多学科协调发展的普通高等学校，是我国特
+				别是西北地区信息产业高级专门人才培养的
+				重要基地......</view>
+		</view>
+	</view>
+</view>
+<!-- 现任领导 -->
+<view class="index_news">
+	<view class="news_title">
+		<text>······现任领导······</text>
+	</view>
+	<view class="leader">
+		<view class="leader_1">
+			<text class="leader_job">党委书记</text>
+			<text class="leader_name">  杨更社</text>
+			<text class="leader_job job1">纪委书记、监察专员 </text>
+			<text class="leader_name">宁焕侠</text>
+
+		</view>
+		<view class="leader_1">
+			<text class="leader_job">党委副书记 </text>
+			<text class="leader_name"> 张新柱​  ​孙冰红  ​宁焕侠 </text>
+			<text class="leader_job">总会计师 </text>
+			<text class="leader_name">冯智纲</text>
+
+		</view>
+		<view class="leader_1">
+			<text class="leader_job">校长   </text>
+			<text class="leader_name">  范九伦</text>
+			<text class="leader_job job2">副校长  </text>
+			<text class="leader_name"> 安增旺  巩稼民  卢光跃  郑大远</text>
+		</view>
+
+	</view>
+</view>
+<!-- 历任领导 -->
+<view class="index_news">
+	<view class="news_title">
+		<text>······历任领导······</text>
+	</view>
+	<view class="container">
+		<view class="item">
+			<view class="item_icon">
+				<image src="../../image/icon/wu.png" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">吴振兴</view>
+				<view class="detail_job">
+					西安邮电学校校长
+				</view>
+				<view class="detail_data">1954.9-1955.5 </view>
+			</view>
+		</view>
+
+		<view class="item">
+			<view class="item_icon">
+				<image src="../../image/icon/yang.png" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">杨邨</view>
+				<view class="detail_job">
+					西安邮电学院党委书记
+				</view>
+				<view class="detail_data">兼院长1959.3-1963.12 </view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 历史沿革 -->
+<view class="index_news history">
+	<view class="news_title">
+		<text>······历史沿革······</text>
+	</view>
+	<view class="news_content">
+		<view class="news_img">
+			<image src="../../image/icon/history1.png" mode="widthFix" />
+		</view>
+		<view class="news_detail">
+			<view class="detail_title">历史沿革</view>
+			<view class="detail_main">
+				1950年初，国家进入全面经济恢复时期，
+				为了迅速发展人民邮电事业，急需培养邮电
+				业务管理和技术人才，西北邮电管理局创办
+				了陕西省邮电人员训练班和甘肃省邮电人员
+				训练班...... </view>
+		</view>
+	</view>
+</view>
+

@@ -1,0 +1,21 @@
+.container {
+    padding: 10rpx 30rpx;
+}
+
+.contents {
+    padding: 10rpx 30rpx;
+}
+
+.content {
+    color: #8D8D8D;
+    font-size: 20rpx;
+    text-indent: 40rpx;
+    text-align: left;
+}
+
+.title {
+    font-size: 20rpx;
+    color: #014A95;
+    border-left: 4rpx solid #014A95;
+    padding-left: 6rpx;
+}

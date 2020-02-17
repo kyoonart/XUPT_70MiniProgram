@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  margin-top: -200rpx;
+  margin-left: -21rpx;
+}
+.container .item {
+  display: flex;
+  width: 320rpx;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.container .item .item_icon {
+  height: 120rpx;
+  width: 120rpx;
+}
+.container .item .item_detail {
+  flex: 1;
+  width: 200rpx;
+  height: 120rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(191, 191, 193, 0.5);
+  padding: 0 10rpx;
+}
+.container .item .item_detail .detail_title {
+  font-size: 24rpx;
+  color: #014A95;
+}
+.container .item .item_detail .detail_job {
+  font-size: 18rpx;
+  color: #8D8D8D;
+}
+.container .item .item_detail .detail_data {
+  font-size: 18rpx;
+  color: #8D8D8D;
+}

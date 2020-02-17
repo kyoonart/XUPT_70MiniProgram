@@ -1,0 +1,166 @@
+<view>
+  <view class="container">
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长 1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长 1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+     <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+    <view class="item left">
+        <view class="item_icon"><image src="../../image/icon/wu.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">吴振兴</view>
+        <view class="detail_job">
+          西安邮电学校校长 
+        </view>
+          <view class="detail_data">1954.9-1955.5 </view>
+        </view>
+    </view>
+     <view class="item right">
+        <view class="item_icon"><image src="../../image/icon/yang.png" mode="widthFix"/></view>
+        <view class="item_detail">
+        <view class="detail_title">杨邨</view>
+        <view class="detail_job">
+        西安邮电学院党委书记
+        </view>
+          <view class="detail_data">兼院长1959.3-1963.12 </view>
+        </view>
+    </view>
+</view>
+</view>
+  
+  
