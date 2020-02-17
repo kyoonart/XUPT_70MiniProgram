@@ -1,0 +1,7 @@
+.user-infomation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 0.1rpx solid #ccc;
+}

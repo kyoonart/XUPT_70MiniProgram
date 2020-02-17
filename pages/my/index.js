@@ -10,24 +10,19 @@ Page({
     inShool: true
   },
   //事件处理函数
-  inShoolBind: function () {
-    if (this.data.inShool === false) {
-      this.setData({
-        inShool: !this.data.inShool
-      })
-    }
-  },
-  unShoolBind: function () {
-    console.log(this.data.inShool)
-    if (this.data.inShool === true) {
-      this.setData({
-        inShool: !this.data.inShool
-      })
-    }
-  },
-  bindViewTap: function () {
+  bindAcountTap: function () {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../accountInformation/index',
+    })
+  },
+  bindBasicTap: function () {
+    wx.navigateTo({
+      url: '../basicInformation/index',
+    })
+  },
+  bindCallTap: function () {
+    wx.navigateTo({
+      url: '../callInformation/index',
     })
   },
   onLoad: function () {

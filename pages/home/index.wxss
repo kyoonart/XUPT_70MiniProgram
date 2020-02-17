@@ -6,6 +6,7 @@
   visibility: hidden;
 }
 .swiper swiper {
+  height: 350rpx;
   padding: 10rpx 30rpx;
 }
 .index_info {
