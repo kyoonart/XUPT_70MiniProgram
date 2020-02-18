@@ -1,0 +1,33 @@
+.img-container {
+    position: relative;
+    display: block;
+    padding: 10rpx 30rpx;
+    margin-top: 20rpx;
+}
+
+.news_title {
+    color: #014A95;
+    text-align: center;
+}
+
+.img-text {
+    height: 70rpx;
+    position: absolute;
+    font-size: 24rpx;
+    bottom: 24rpx;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+}
+
+.img_detail {
+    font-size: 20rpx;
+    color: #8D8D8D;
+    padding: 0 30rpx;
+    margin-top: -10rpx;
+    margin-bottom: 30rpx;
+}
+
+.img-textarea {
+    padding: 10rpx;
+}

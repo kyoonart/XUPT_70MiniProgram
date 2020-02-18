@@ -1,0 +1,35 @@
+<view class="movie-container">
+	<!-- 导航栏 -->
+	<view class="navbar">
+		<block wx:for="{{navbarTitle}}" wx:key="index">
+			<view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+				<text>{{item}}</text>
+			</view>
+		</block>
+	</view>
+	<view class="movie-content-wrapper">
+		<view current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
+			<view wx:for="{{navbarTitle}}" wx:key="index"  >
+					<view class="img-container">
+						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<view class='img-text'>
+							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
+						</view>
+					</view>
+					<view class="img-container">
+						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<view class='img-text'>
+							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
+						</view>
+					</view>
+					<view class="img-container">
+						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<view class='img-text'>
+							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
+						</view>
+					</view>
+			</view>
+		</view>
+	</view>
+</view>
+

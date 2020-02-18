@@ -1,0 +1,28 @@
+<view>
+	<image src="../../image/keyan/keyan.png" mode="widthFix" />
+</view>
+<!-- 详情 -->
+<view class="contents">
+	<view class="title">XXXXXXXXXX项目简介 </view>
+	<view class="content">
+		项目详情项目详情项目详情项目详情项目详情项目
+		详情项目详情项目详情项目详情项目详情项目详情项目
+		详情项目详情项目详情项目详情项目详
+	</view>
+	<view class="more" bindtap="clickMore" hidden="{{!isShow}}">
+		<text class="more_title">查看更多 </text>
+		<view class="arrow" />
+	</view>
+</view>
+
+<!-- 团队 -->
+<view class="teamContent">
+	<image src="../../image/keyan/keyan1.png" mode="widthFix" />
+	<view class="team_style">团队风采</view>
+	<view class="team_detail">
+		<view class="team_mainPerson">总负责人：张默默</view>
+		<view>负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情
+        </view>
+	</view>
+</view>
+

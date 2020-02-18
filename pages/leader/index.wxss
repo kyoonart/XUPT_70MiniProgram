@@ -23,6 +23,10 @@
   height: 120rpx;
   box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(191, 191, 193, 0.5);
   padding: 0 10rpx;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container .item .item_detail .detail_title {
   font-size: 24rpx;

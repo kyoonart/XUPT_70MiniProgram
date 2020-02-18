@@ -106,6 +106,62 @@
 					"id": -1,
 					"name": "pages/profile/index",
 					"pathName": "pages/profile/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/schoolnews/index",
+					"pathName": "pages/schoolnews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/newsDetail/index",
+					"pathName": "pages/newsDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activityDetail/index",
+					"pathName": "pages/activityDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/scientific/index",
+					"pathName": "pages/scientific/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myAlumni/index",
+					"pathName": "pages/myAlumni/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/researchdevelopment/index",
+					"pathName": "pages/researchdevelopment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comment/index",
+					"pathName": "pages/comment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sendInterActive/index",
+					"pathName": "pages/sendInterActive/index",
 					"scene": null
 				}
 			]
