@@ -11,11 +11,7 @@
 		</view>
 		<view class="news_detail">
 			<view class="detail_title">学校简介</view>
-			<view class="detail_main">西安邮电大学是一所以工为主，以信息科学
-				技术为特色，工、管、理、经、文、法、艺
-				多学科协调发展的普通高等学校，是我国特
-				别是西北地区信息产业高级专门人才培养的
-				重要基地......</view>
+			<view class="detail_main">{{schoolProfile}}</view>
 		</view>
 	</view>
 </view>
@@ -80,6 +76,7 @@
 			</view>
 		</view>
 	</view>
+<navigator url="../leader/index"><view class="more" >查看更多</view></navigator>
 </view>
 
 <!-- 历史沿革 -->

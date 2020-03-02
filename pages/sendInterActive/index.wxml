@@ -1,33 +1,33 @@
 <view class="content">
-<textarea  type="text" placeholder="这一刻的想法...">
-	</textarea>
+	<textarea type="text" placeholder="这一刻的想法..." />
 </view>
-  
+
 <view class='uploader-img' wx:if="{{pics}}">
 	<view class='uploader-list' wx:for="{{pics}}" wx:key="item.length">
-	<view class="list_item">
-	<image
-		 src='{{item}}'
-		 data-index="{{index}}"
-		 mode="scaleToFill"
-		 bindtap='previewImg1'
-		  mode="widthFix"
-		/>
-	</view>
-	<view class="delete">
-		<image
-		 data-index="{{index}}"
-		src="../../image/icon/deleta.jpg"
-		 mode="widthFix"
-		 bindtap='deleteImg'
-		 mode="widthFix"
-		/>
-	</view>
+		<view class="list_item">
+			<image
+			 src='{{item}}'
+			 data-index="{{index}}"
+			 mode="scaleToFill"
+			 bindtap='previewImg1'
+			 mode="widthFix"
+			/>
+		</view>
+		<view class="delete">
+			<image
+			 data-index="{{index}}"
+			 src="../../image/icon/deleta.jpg"
+			 mode="widthFix"
+			 bindtap='deleteImg'
+			 mode="widthFix"
+			/>
+		</view>
 	</view>
 </view>
 <view class='upAdd' bindtap='chooseImg'>
 	<image src='../../image/icon/upadd.png' mode="widthFix" />
 </view>
 <view class="btn">
-<view class="btn_send">发布</view>
+	<view class="btn_send">发布</view>
 </view>
+

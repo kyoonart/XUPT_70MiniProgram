@@ -16,6 +16,7 @@
 .container .item .item_icon {
   height: 120rpx;
   width: 120rpx;
+  overflow: hidden;
 }
 .container .item .item_detail {
   flex: 1;
@@ -39,4 +40,8 @@
 .container .item .item_detail .detail_data {
   font-size: 18rpx;
   color: #8D8D8D;
+}
+.cccc {
+  width: 120rpx;
+  height: 120rpx;
 }

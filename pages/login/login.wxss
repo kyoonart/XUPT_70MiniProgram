@@ -1,1 +1,42 @@
-/* pages/login/login.wxss */
+/**index.wxss**/
+
+page {
+    background-image: url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    height: 100%;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #fff;
+    font-size: 36rpx;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.usermotto .btn {
+    width: 500rpx;
+    height: 80rpx;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color: #0142AA;
+    border-radius: 8rpx;
+}

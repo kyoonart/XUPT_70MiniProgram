@@ -162,6 +162,41 @@
 					"id": -1,
 					"name": "pages/sendInterActive/index",
 					"pathName": "pages/sendInterActive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/accountInformation/index",
+					"pathName": "pages/accountInformation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/schoolNews/index",
+					"pathName": "pages/schoolNews/index",
 					"scene": null
 				}
 			]
