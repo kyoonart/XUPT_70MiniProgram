@@ -41,7 +41,7 @@
   font-size: 18rpx;
   color: #8D8D8D;
 }
-.cccc {
+.test {
   width: 120rpx;
   height: 120rpx;
 }
