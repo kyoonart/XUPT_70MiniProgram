@@ -1,11 +1,13 @@
 //Page Object
 Page({
     data: {
-        lists: []
+        lists: [],
+        base: "http://m2t9650514.qicp.vip"
     },
     //options(Object)
     onLoad: function(options) {
-        this.getInfo()
+        this.getInfo();
+
     },
     getInfo() {
         const baseUrl = "http://m2t9650514.qicp.vip";
@@ -16,12 +18,15 @@ Page({
             dataType: 'json',
             responseType: 'text',
             success: (result) => {
-                let res = result.data.data.rows
+                let res = result.data.data.rows;
+                let i = 0
                 this.setData({
-                    lists: res
+                    lists: res,
+                    // imgUrl: baseUrl + res[i++].avatar
                 })
-            },
 
+
+            },
         });
     }
 });

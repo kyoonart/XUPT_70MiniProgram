@@ -3,7 +3,7 @@
 </view>
 
 <view class='uploader-img' wx:if="{{pics}}">
-	<view class='uploader-list' wx:for="{{pics}}" wx:key="item.length">
+	<view class='uploader-list' wx:for="{{pics}}" wx:key="*this">
 		<view class="list_item">
 			<image
 			 src='{{item}}'

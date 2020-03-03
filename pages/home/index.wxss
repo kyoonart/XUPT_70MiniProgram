@@ -6,7 +6,6 @@
   visibility: hidden;
 }
 .swiper swiper {
-  height: 350rpx;
   padding: 10rpx 30rpx;
 }
 .index_info {
@@ -31,7 +30,7 @@
   width: 100%;
   height: 30vm;
   margin-left: 75rpx;
-  margin-top: 16rpx;
+  margin-top: -20rpx;
 }
 .index-navbar view {
   width: 33.33%;

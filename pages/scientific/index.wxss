@@ -8,6 +8,34 @@ page .contents {
   text-align: left;
   margin-bottom: 42rpx;
 }
+page .contents .header {
+  display: flex;
+  justify-content: space-between;
+}
+page .contents .header .title {
+  flex: 2;
+  font-size: 24rpx;
+  color: #014A95;
+  margin-left: -44rpx;
+}
+page .contents .header .set {
+  flex: 1;
+  height: 30rpx;
+}
+page .contents .header .set .share {
+  width: 31rpx;
+  height: 32rpx;
+  display: inline-block;
+}
+page .contents .header .set text {
+  color: #8D8D8D;
+  font-size: 20rpx;
+  margin-left: 46rpx;
+}
+page .contents .data {
+  font-size: 18rpx;
+  margin-left: -40rpx;
+}
 page .contents .title {
   flex: 2;
   font-size: 24rpx;
@@ -50,4 +78,24 @@ page .contents .more .more_title {
 .teamContent .team_detail view {
   color: #8D8D8D;
   font-size: 20rpx;
+}
+.contactMe {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-top: 2rpx solid #ccc;
+  margin-top: 30rpx;
+  padding: 0;
+}
+.contactMe .btn {
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #007EFF;
+  border-radius: 10rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 30rpx ;
+  margin-top: 25rpx;
 }

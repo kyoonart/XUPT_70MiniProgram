@@ -1,18 +1,17 @@
 <view>
-  <view class="container">
-   <view class="item left" wx:for="{{lists}}" wx:key="id">
-        <view class="item_icon"><image src="https://s2.ax1x.com/2020/03/02/3WX5WT.png" mode="widthFix"/></view>
-        <view class="item_detail">
-        <view class="detail_title">{{item.fullName}}</view>
-        <view class="detail_job">
-         {{item.position}}
-        </view>
-          <view class="detail_data">{{item.workingTime}}</view>
-        </view>
-    </view>
-    </view>
-    </view>
-<view class="test">
-<image  src="http://m2t9650514.qicp.vip/upload/1582902930534.png"></image>
+	<view class="container">
+		<view class="item left" wx:for="{{lists}}" wx:key="id">
+			<view class="item_icon">
+				<image src="{{base}}{{item.avatar}}" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">{{item.fullName}}</view>
+				<view class="detail_job">
+					{{item.position}}
+				</view>
+				<view class="detail_data">{{item.workingTime}}</view>
+			</view>
+		</view>
+	</view>
 </view>
-  
+

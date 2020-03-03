@@ -1,5 +1,6 @@
 <view class="index_news" wx:for="{{list}}" wx:key="id">
-	<view class="news_content">
+	<navigator url="../newsDetail/index">
+		<view class="news_content">
 		<view class="news_img">
 			<image src="../../image/icon/zls.png" mode="widthFix" />
 		</view>
@@ -9,4 +10,5 @@
 			<view class="detail_data">{{item.createTime}}</view>
 		</view>
 	</view>
+	</navigator>
 </view>

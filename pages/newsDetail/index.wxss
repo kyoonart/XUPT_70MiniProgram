@@ -11,14 +11,27 @@ page {
   display: flex;
   justify-content: space-between;
 }
-.contents .header .data {
-  flex: 1;
-  font-size: 18rpx;
-  margin-right: -150rpx;
-}
 .contents .header .title {
   flex: 2;
   font-size: 24rpx;
   color: #014A95;
   margin-left: -44rpx;
+}
+.contents .header .set {
+  flex: 1;
+  height: 30rpx;
+}
+.contents .header .set .share {
+  width: 31rpx;
+  height: 32rpx;
+  display: inline-block;
+}
+.contents .header .set text {
+  color: #8D8D8D;
+  font-size: 20rpx;
+  margin-left: 46rpx;
+}
+.contents .data {
+  font-size: 18rpx;
+  margin-left: -40rpx;
 }

@@ -197,6 +197,20 @@
 					"id": -1,
 					"name": "pages/schoolNews/index",
 					"pathName": "pages/schoolNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/newsDetail/index",
+					"pathName": "pages/newsDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/scientific/index",
+					"pathName": "pages/scientific/index",
 					"scene": null
 				}
 			]

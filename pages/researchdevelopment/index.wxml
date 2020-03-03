@@ -1,39 +1,27 @@
-<view>
-<view class="img-container">
-	<image src="../../image/keyan/keyan1.png" mode="widthFix" />
-	<view class='img-text'>
-		<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
-    </view>
+<view wx:for="{{lists}}" wx:key="id">
+	<navigator url="../scientific/index?id=2">
+	<view class="img-container">
+		<image src="{{base}}{{item.pimg.imgUrl}}" mode="widthFix" />
+		<view class='img-text'>
+			<view class='img-textarea'>{{item.leaderIntroduction}}</view>
+		</view>
+	</view>
+	<view class="img_detail">
+		{{item.introduction}}
+	</view></navigator>
+	<view class="liked">
+		<view class="item">
+			<view class="share">
+				<image src="../../image/icon/message.png" mode="widthFix" />
+			</view>
+			<text>{{item.commentNums}}</text>
+		</view>
+		<view class="item">
+			<view class="share">
+				<image src="../../image/icon/good.png" mode="widthFix" />
+			</view>
+			<text>{{item.likeNums}}</text>
+		</view>
+	</view>
 </view>
- <view class="img_detail">
-        项目详情项目详情项目详情项目详情项目详情项目详情项
-        目详情项目详情项目详情项目详情项目详情项目详情项目详情项目详情
- </view>
- </view>
-
-<view>
-<view class="img-container">
-	<image src="../../image/keyan/keyan1.png" mode="widthFix" />
-	<view class='img-text'>
-		<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
-    </view>
-</view>
- <view class="img_detail">
-        项目详情项目详情项目详情项目详情项目详情项目详情项
-        目详情项目详情项目详情项目详情项目详情项目详情项目详情项目详情
- </view>
- </view>
-
-<view>
-<view class="img-container">
-	<image src="../../image/keyan/keyan1.png" mode="widthFix" />
-	<view class='img-text'>
-		<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
-    </view>
-</view>
- <view class="img_detail">
-        项目详情项目详情项目详情项目详情项目详情项目详情项
-        目详情项目详情项目详情项目详情项目详情项目详情项目详情项目详情
- </view>
- </view>
 

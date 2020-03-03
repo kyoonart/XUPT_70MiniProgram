@@ -31,3 +31,27 @@
 .img-textarea {
     padding: 10rpx;
 }
+
+.liked {
+    margin-top: -50rpx;
+}
+
+.item {
+    margin-bottom: 20rpx;
+}
+
+.liked .item {
+    float: right;
+    margin-right: 40rpx;
+}
+
+.liked .share {
+    width: 21rpx;
+    height: 21rpx;
+}
+
+.liked text {
+    font-size: 13rpx;
+    float: right;
+    margin-left: 20rpx;
+}

@@ -4,9 +4,21 @@
 <!-- 详情 -->
 <view class="contents">
    <view class="header">
-    <view class="title">我校召开疫情防控工作部署会</view>
-    <view class="data">2019/12/29</view> 
+    <view class="title">我校召开疫情防控工作部署会 </view>
+    	<view class="set middle">
+				<view class="share">
+					<image src="../../image/icon/message.png" mode="widthFix" />
+				</view>
+				<text>326</text>
+			</view>
+			<view class="set left">
+				<view class="share">
+					<image src="../../image/icon/good.png" mode="widthFix" />
+				</view>
+				<text>2699</text>
+			</view>
    </view>
+    <view class="data">2019/12/29</view> 
 	<view class="content">1950年初，国家进入全面经济恢复时期，为了迅速发展人民邮电事业，
         急需培养邮电业务管理和技术人才，西北邮电管理局创办了陕西省邮电人员训练班和甘肃省邮电人员训练班。
         1952年4月1日，西北邮电管理局决定，将陕西、甘肃两省邮电人员训练班合并，正式成立西北邮电学校。1953年6月1日，

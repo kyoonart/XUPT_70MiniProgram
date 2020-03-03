@@ -7,7 +7,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto" wx:if="{{hasUserInfo||!canIUse}}">
+  <view class="usermotto">
    <view class="btn" bindtap="bindChange">立即登录</view>
   </view>
 </view>

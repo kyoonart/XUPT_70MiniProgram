@@ -16,7 +16,7 @@
 	</swiper>
 </view>
 <!-- 通知 -->
-<view class="index_info">
+<view class="index_info" bindtap = "handleChange">
 	<view class="info_content">
 		<view class="info_img">
 			<image src="../../image/icon/speak.png" mode="widthFix" />
