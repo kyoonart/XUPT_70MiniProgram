@@ -1,5 +1,3 @@
-/**index.wxss**/
-
 page {
     background-image: url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
     background-repeat: no-repeat;

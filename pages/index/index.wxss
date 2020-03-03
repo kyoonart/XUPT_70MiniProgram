@@ -1,41 +1,41 @@
 /**index.wxss**/
+
 page {
- background-image:url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
-  background-repeat:no-repeat; 
-  background-size:100% 100%;
-  -moz-background-size:100% 100%;
-  height: 100%;
+    background-image: url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    height: 100%;
 }
+
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200rpx;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 50%;
 }
 
-.userinfo-school{
-  margin: 80rpx 0;
-  font-size:18px;
-  display:flex;
-  color:#fff;
+.userinfo-school {
+    margin: 80rpx 0;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
 }
 
-.userinfo-unschool{
-  color:#ccc;
+.userinfo-unschool {
+    color: #ccc;
 }
-
 
 .userinfo-nickname {
-  color: #aaa;
+    color: #aaa;
 }
 
 .usermotto {
-  margin-top: 200px;
+    margin-top: 200rpx;
 }

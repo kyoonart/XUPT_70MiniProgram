@@ -21,7 +21,8 @@
         "pages/myAlumni/index",
         "pages/researchdevelopment/index",
         "pages/comment/index",
-        "pages/sendInterActive/index"
+        "pages/sendInterActive/index",
+        "pages/backSchoolMap/index"
 
     ],
     "window": {

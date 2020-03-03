@@ -1,8 +1,7 @@
 //Page Object
 Page({
     data: {
-        lists: [],
-        imgUrl: ''
+        lists: []
     },
     //options(Object)
     onLoad: function(options) {
@@ -19,8 +18,7 @@ Page({
             success: (result) => {
                 let res = result.data.data.rows
                 this.setData({
-                    lists: res,
-                    imgUrl: baseUrl + res[0].avatar
+                    lists: res
                 })
             },
 

@@ -67,12 +67,14 @@
             </view>
               <text>20</text> 
          </view>
+        <navigator url="../comment/index">
          <view class="set middle">
                <view class="share">
             <image  src="../../image/icon/message.png" mode="widthFix"/>
             </view>
               <text>326</text> 
          </view>
+        </navigator>
          <view class="set left">
                <view class="share">
             <image  src="../../image/icon/good.png" mode="widthFix"/>

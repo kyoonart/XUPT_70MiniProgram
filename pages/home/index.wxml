@@ -26,42 +26,54 @@
 </view>
 <!-- 导航 -->
 <view class="index-navbar clearfix">
-	<view>
+	<navigator url="../profile/index" open-type="navigate">
+		<view>
 	<view class="navbar_img">
 			<image src="../../image/icon/school.png" mode="widthFix" />
 		</view>
 		<text>学校概况</text>
 	</view>
+	</navigator>
+	<navigator url="../schoolNews/index">
 	<view>
 		<view class="navbar_img">
 			<image src="../../image/icon/news.png" mode="widthFix" />
 		</view>
 		<text>学校新闻</text>
 	</view>
+	</navigator>
+	<navigator url="../backSchoolMap/index">
 	<view>
 		<view class="navbar_img">
 			<image src="../../image/icon/map.png" mode="widthFix" />
 		</view>
 		<text>返校指南</text>
 	</view>
+	</navigator>
+	<navigator url="../myAlumni/index">
 	<view>
 		<view class="navbar_img">
 			<image src="../../image/icon/mcs.png" mode="widthFix" />
 		</view>
 		<text>我的校友</text>
 	</view>
+	</navigator>
+	<navigator url="../researchdevelopment/index">
 	<view>
 	<view class="navbar_img">
 			<image src="../../image/icon/tac.png" mode="widthFix" />
 		</view>
 		<text>科研研发</text>
 	</view>
+	</navigator>
+	<navigator url="../index/index">
 	<view>
 	<view class="navbar_img">
 			<image src="../../image/icon/safe.png" mode="widthFix" />
 		</view>
 		<text>校友验证</text>
 	</view>
+	</navigator>
 </view>
 <!-- 大图 -->
 <view class="index_bigimg">
