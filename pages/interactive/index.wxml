@@ -45,17 +45,17 @@
 	</view>
 </view>
 <!-- 文章内容 -->
-<view class="page">
+<view class="page" wx:for="{{lists}}" wx:key="id">
 	<view class="page_person">
 		<view class="person_header">
 			<view class="person_icon">
 				<image src="../../image/icon/icon.png" mode="widthFix" />
 			</view>
-			<text>隔壁老王</text>
+			<text>张子轩</text>
 		</view>
 
 		<view class="page_address">
-			<text>[剑道社团]招收新成员,欢喜大家踊跃报名参加.报名地点:5号 实验楼510室</text>
+			<text>[{{item.activityTitle}}]{{item.contents}}</text>
 		</view>
 	</view>
 	<view class="page_detail">
@@ -69,69 +69,25 @@
 				</view>
 				<text>20</text>
 			</view>
-			<navigator url="../comment/index">
+			<navigator url="../comment/index?id={{item.id}}&type=1">
 				<view class="set middle">
 					<view class="share">
 						<image src="../../image/icon/message.png" mode="widthFix" />
 					</view>
-					<text>326</text>
+					<text>{{item.commentNums}}</text>
 				</view>
 			</navigator>
 			<view class="set left">
 				<view class="share">
 					<image src="../../image/icon/good.png" mode="widthFix" />
 				</view>
-				<text>2699</text>
+				<text>{{item.likeNums}}</text>
 			</view>
 
 		</view>
-
 	</view>
-
 </view>
-
-<view class="page">
-	<view class="page_person">
-		<view class="person_header">
-			<view class="person_icon">
-				<image src="../../image/icon/icon.png" mode="widthFix" />
-			</view>
-			<text>隔壁老王</text>
-		</view>
-
-		<view class="page_address">
-			<text>[剑道社团]招收新成员,欢喜大家踊跃报名参加.报名地点:5号 实验楼510室</text>
-		</view>
-	</view>
-	<view class="page_detail">
-		<view class="detail_img">
-			<image src="../../image/icon/bar1.png" mode="widthFix" />
-		</view>
-		<view class="detail_set">
-			<view class="set">
-				<view class="share">
-					<image src="../../image/icon/share.png" mode="widthFix" />
-				</view>
-				<text>20</text>
-			</view>
-			<view class="set middle">
-				<view class="share">
-					<image src="../../image/icon/message.png" mode="widthFix" />
-				</view>
-				<text>326</text>
-			</view>
-			<view class="set left">
-				<view class="share">
-					<image src="../../image/icon/good.png" mode="widthFix" />
-				</view>
-				<text>2699</text>
-			</view>
-
-		</view>
-
-	</view>
-
-</view>
-<navigator  class="submit" url="../sendInterActive/index">
-  <image src="../../image/icon/write.png" mode="widthFix"/>
+<navigator class="submit" url="../sendInterActive/index">
+	<image src="../../image/icon/write.png" mode="widthFix" />
 </navigator>
+

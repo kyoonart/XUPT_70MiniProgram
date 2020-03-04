@@ -54,27 +54,27 @@
 	<view class="container">
 		<view class="item">
 			<view class="item_icon">
-				<image src="../../image/icon/wu.png" mode="widthFix" />
+				<image src="{{base}}{{lists[0].avatar}}" mode="widthFix" />
 			</view>
 			<view class="item_detail">
-				<view class="detail_title">吴振兴</view>
+				<view class="detail_title">{{lists[0].fullName}}</view>
 				<view class="detail_job">
-					西安邮电学校校长
+					{{lists[0].position}}
 				</view>
-				<view class="detail_data">1954.9-1955.5 </view>
+				<view class="detail_data">{{lists[0].workingTime}} </view>
 			</view>
 		</view>
 
 		<view class="item">
 			<view class="item_icon">
-				<image src="../../image/icon/yang.png" mode="widthFix" />
+				<image src="{{base}}{{lists[1].avatar}}" mode="widthFix" />
 			</view>
 			<view class="item_detail">
-				<view class="detail_title">杨邨</view>
+				<view class="detail_title">{{lists[1].fullName}}</view>
 				<view class="detail_job">
-					西安邮电学院党委书记
+				{{lists[1].position}}
 				</view>
-				<view class="detail_data">兼院长1959.3-1963.12 </view>
+				<view class="detail_data">{{lists[1].workingTime}} </view>
 			</view>
 		</view>
 	</view>

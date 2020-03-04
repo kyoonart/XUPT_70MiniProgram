@@ -26,6 +26,7 @@ page .contents .header .set .share {
   width: 31rpx;
   height: 32rpx;
   display: inline-block;
+  vertical-align: middle;
 }
 page .contents .header .set text {
   color: #8D8D8D;

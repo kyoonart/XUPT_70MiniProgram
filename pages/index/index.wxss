@@ -39,3 +39,7 @@ page {
 .usermotto {
     margin-top: 200rpx;
 }
+
+input {
+    padding-left: 20rpx;
+}

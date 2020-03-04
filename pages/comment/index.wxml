@@ -2,39 +2,16 @@
     <view class="input"><input type="text" placeholder="写下你的评论"confirm-type="send" /></view>
     <view class="send_btn"> <view>发布</view></view>   
 </view>
-<view class="page">
+<view class="page" wx:for="{{lists}}" wx:key="id">
     <view class="page_person">
        <view class="person_header"> 
             <view class="person_icon">
              <image src="../../image/icon/icon.png" mode="widthFix"/>
         </view>    
-       <text>隔壁老王</text>
+       <text>{{item.userName}}</text>
        </view>  
-       <view class="page_address"><text>现在还可以报名吗？现在还可以报名吗？现在还可以报名吗？现在还可以报名 吗？现在还可以报名吗？</text></view> 
-       <view class="page_data"><text>2019/12/20</text></view>
+       <view class="page_address"><text>{{item.contents}}</text></view> 
+       <view class="page_data"><text>{{item.createTime}}</text></view>
     </view>
     </view>
-    <view class="page">
-    <view class="page_person">
-       <view class="person_header"> 
-            <view class="person_icon">
-             <image src="../../image/icon/icon.png" mode="widthFix"/>
-        </view>    
-       <text>隔壁老王</text>
-       </view>  
-       <view class="page_address"><text>现在还可以报名吗？现在还可以报名吗？现在还可以报名吗？现在还可以报名 吗？现在还可以报名吗？</text></view> 
-       <view class="page_data"><text>2019/12/20</text></view>
-    </view>
-    </view>
-    <view class="page">
-    <view class="page_person">
-       <view class="person_header"> 
-            <view class="person_icon">
-             <image src="../../image/icon/icon.png" mode="widthFix"/>
-        </view>    
-       <text>隔壁老王</text>
-       </view>  
-       <view class="page_address"><text>现在还可以报名吗？现在还可以报名吗？现在还可以报名吗？现在还可以报名 吗？现在还可以报名吗？</text></view> 
-       <view class="page_data"><text>2019/12/20</text></view>
-    </view>
-    </view>
+  

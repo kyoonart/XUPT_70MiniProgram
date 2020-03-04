@@ -211,6 +211,27 @@
 					"id": -1,
 					"name": "pages/scientific/index",
 					"pathName": "pages/scientific/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comment/index",
+					"pathName": "pages/comment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/leader/index",
+					"pathName": "pages/leader/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
 					"scene": null
 				}
 			]

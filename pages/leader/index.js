@@ -19,7 +19,6 @@ Page({
             responseType: 'text',
             success: (result) => {
                 let res = result.data.data.rows;
-                let i = 0
                 this.setData({
                     lists: res,
                     // imgUrl: baseUrl + res[i++].avatar

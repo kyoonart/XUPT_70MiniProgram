@@ -10,7 +10,8 @@ Page({
         principal: '',
         vicePrincipal: '',
         schoolProfile: '',
-        imgUrl: ''
+        base: 'http://m2t9650514.qicp.vip',
+        lists: []
     },
     //options(Object)
     onLoad: function(options) {
@@ -35,7 +36,20 @@ Page({
                     principal: res.principal,
                     vicePrincipal: res.vicePrincipal,
                     schoolProfile: res.schoolProfile,
-                    imgUrl: res.imgUrl[0]
+                })
+            },
+        });
+        wx.request({
+            url: baseUrl + '/wxReq/previousLeaders?pageNum=1&pageSize=10',
+            header: { 'content-type': 'application/json' },
+            method: 'GET',
+            dataType: 'json',
+            responseType: 'text',
+            success: (result) => {
+                let res = result.data.data.rows;
+                this.setData({
+                    lists: res,
+                    // imgUrl: baseUrl + res[i++].avatar
                 })
             },
         });
