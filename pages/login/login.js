@@ -49,11 +49,17 @@ Page({
                 let code = result.code;
                 wx.getUserInfo({
                     success: function(res) {
+                      console.log(res)
+                      console.log(code)
                         let userInfo = JSON.stringify(res.userInfo);
+                        console.log(userInfo)
                         wx.request({
-                            url: baseUrl + `/wxLogin?code=${code}&rawData=${userInfo}`,
-                            data: {},
-                            header: { 'content-type': 'application/json' },
+                            url: baseUrl + `/wxLogin`,
+                            data: {
+                              code: code,
+                              rawData: userInfo
+                            },
+                          header: { 'content-type': 'application/x-www-form-urlencoded' },
                             method: 'POST',
                             dataType: 'json',
                             responseType: 'text',
