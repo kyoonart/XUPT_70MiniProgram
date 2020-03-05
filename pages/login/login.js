@@ -11,11 +11,11 @@ Page({
             url: '../logs/logs'
         })
     },
-    bindChange() {
-        wx.switchTab({
-            url: '../home/index',
-        });
-    },
+    // bindChange() {
+    //     wx.switchTab({
+    //         url: '../home/index',
+    //     });
+    // },
     onLoad: function() {
         if (app.globalData.userInfo) {
             this.setData({
@@ -41,6 +41,31 @@ Page({
             })
         }
     },
+    bindChange() {
+        const baseUrl = "http://m2t9650514.qicp.vip";
+        wx.login({
+            timeout: 10000,
+            success: (result) => {
+                let code = result.code;
+                wx.getUserInfo({
+                    success: function(res) {
+                        let userInfo = JSON.stringify(res.userInfo);
+                        wx.request({
+                            url: baseUrl + `/wxLogin?code=${code}&rawData=${userInfo}`,
+                            data: {},
+                            header: { 'content-type': 'application/json' },
+                            method: 'POST',
+                            dataType: 'json',
+                            responseType: 'text',
+                            success: (result) => {
+                                console.log(result);
+                            },
+                        });
+                    }
+                })
+            },
+        });
+    },
     getUserInfo: function(e) {
         console.log(e)
         app.globalData.userInfo = e.detail.userInfo
@@ -49,5 +74,4 @@ Page({
             hasUserInfo: true
         })
     }
-
 })
