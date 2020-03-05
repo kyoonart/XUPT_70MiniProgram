@@ -13,6 +13,7 @@ page {
     flex-direction: column;
     align-items: center;
     height: 200rpx;
+    margin: -36rpx;
 }
 
 .userinfo-avatar {
@@ -42,4 +43,9 @@ page {
 
 input {
     padding-left: 20rpx;
+}
+
+.submit {
+    height: 82rpx;
+    line-height: 82rpx;
 }

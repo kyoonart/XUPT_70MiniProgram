@@ -45,26 +45,30 @@ Page({
         const baseUrl = "http://m2t9650514.qicp.vip";
         wx.login({
             timeout: 10000,
-            success: (result) => {
-                let code = result.code;
+            success: (res) => {
+                let code = res.code
                 wx.getUserInfo({
                     success: function(res) {
-                      console.log(res)
-                      console.log(code)
                         let userInfo = JSON.stringify(res.userInfo);
-                        console.log(userInfo)
                         wx.request({
                             url: baseUrl + `/wxLogin`,
                             data: {
-                              code: code,
-                              rawData: userInfo
+                                code: code,
+                                rawData: userInfo
                             },
-                          header: { 'content-type': 'application/x-www-form-urlencoded' },
+                            header: { 'content-type': 'application/x-www-form-urlencoded' },
                             method: 'POST',
                             dataType: 'json',
                             responseType: 'text',
                             success: (result) => {
                                 console.log(result);
+                                let token = result.data.data.token;
+                                let openId = result.data.data.userInfo.openid
+                                wx.setStorageSync('token', token)
+                                wx.setStorageSync('openid', openId)
+                                wx.switchTab({
+                                    url: '../home/index',
+                                });
                             },
                         });
                     }

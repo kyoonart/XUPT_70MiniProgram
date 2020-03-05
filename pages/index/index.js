@@ -5,7 +5,10 @@ Page({
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        inShool: true
+        inShool: true,
+        fullName: '',
+        studentId: 0,
+        type: 0
     },
     //事件处理函数
     inShoolBind: function() {
@@ -29,7 +32,7 @@ Page({
         })
     },
     onShow() {
-        this.getOpenid()
+
     },
     onLoad: function() {
         if (app.globalData.userInfo) {
@@ -42,7 +45,7 @@ Page({
             // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
             // 所以此处加入 callback 以防止这种情况
             app.userInfoReadyCallback = res => {
-                console.log(res.userInfo);
+                // console.log(res.userInfo);
 
                 this.setData({
                     userInfo: res.userInfo,
@@ -63,16 +66,68 @@ Page({
             })
         }
     },
-    getOpenid() {
+    // bindChange() {
+    formSubmit: function(e) {
+        const { fullName, studentId } = e.detail.value;
+        const type = e.detail.target.dataset.type;
+        this.Login(fullName, studentId, type)
+    },
+    formSubmit2: function(e) {
+        const { fullName, studentId } = e.detail.value;
+        const type = e.detail.target.dataset.type;
+        this.Login(fullName, studentId, type)
+    },
+    Login(fullName, studentId, type) {
         wx.login({
             timeout: 10000,
-            success: (result) => {
-                let code = result.code;
-                console.log(code);
+            success: (res) => {
+                let code = res.code;
+                const baseUrl = "http://m2t9650514.qicp.vip";
+                wx.getUserInfo({
+                    success: function(res) {
+                        let userInfo = JSON.stringify(res.userInfo);
+                        wx.request({
+                            url: baseUrl + `/wxReq/alumniVerification`,
+                            data: {
+                                type: type,
+                                fullName: fullName,
+                                studentId: studentId,
+                                openid: wx.getStorageSync('openid')
+                            },
+                            header: { 'content-type': 'application/x-www-form-urlencoded' },
+                            method: 'POST',
+                            dataType: 'json',
+                            responseType: 'text',
+                            success: (res) => {
+                                if (res.data.code === 200) {
+                                    wx.showLoading({
+                                        title: '正在验证中',
+                                        mask: true,
+                                        success: (result) => {
+                                            wx.switchTab({
+                                                url: '../home/index',
+                                            });
+                                        },
 
+                                    });
+                                } else {
+                                    wx.showToast({
+                                        title: '验证失败',
+                                        icon: 'none',
+                                        duration: 200,
+                                        mask: false,
+                                        success: (result) => {},
+                                    });
+                                }
+
+                            },
+                        });
+                    }
+                })
             },
         });
     },
+    // },
     getUserInfo: function(e) {
         app.globalData.userInfo = e.detail.userInfo
         this.setData({
