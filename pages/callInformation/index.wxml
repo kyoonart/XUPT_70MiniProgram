@@ -1,6 +1,6 @@
 <view class='user-infomation' bindtap='bindAcountTap'>
-  <view>电话：</view>
+  <view>电话：{{tel}}</view>
 </view>
 <view class='user-infomation' bindtap='bindAcountTap'>
-  <view>邮箱：</view>
+  <view>邮箱：{{e_mail}}</view>
 </view>

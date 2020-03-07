@@ -8,6 +8,10 @@ page {
     height: 100%;
 }
 
+.container {
+    height: 106%;
+}
+
 .userinfo {
     display: flex;
     flex-direction: column;
@@ -46,6 +50,12 @@ input {
 }
 
 .submit {
+    height: 82rpx;
+    line-height: 82rpx;
+}
+
+.back {
+    margin-top: 20rpx;
     height: 82rpx;
     line-height: 82rpx;
 }

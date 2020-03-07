@@ -27,7 +27,7 @@
 <!-- 导航 -->
 <view class="index-navbar clearfix">
 	<navigator url="../profile/index" open-type="navigate">
-		<view>
+		<view >
 	<view class="navbar_img">
 			<image src="../../image/icon/school.png" mode="widthFix" />
 		</view>
@@ -50,14 +50,12 @@
 		<text>返校指南</text>
 	</view>
 	</navigator>
-	<navigator url="../myAlumni/index">
-	<view>
+	<view bindtap="handleVer">
 		<view class="navbar_img">
 			<image src="../../image/icon/mcs.png" mode="widthFix" />
 		</view>
 		<text>我的校友</text>
 	</view>
-	</navigator>
 	<navigator url="../researchdevelopment/index">
 	<view>
 	<view class="navbar_img">

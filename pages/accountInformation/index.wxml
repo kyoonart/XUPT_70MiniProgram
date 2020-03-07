@@ -1,6 +1,6 @@
 <view class='user-infomation' bindtap='bindAcountTap'>
-  <view>ID：</view>
+  <view>ID：{{id}}</view>
 </view>
 <view class='user-infomation' bindtap='bindAcountTap'>
-  <view>账号：</view>
+  <view>账号：{{studentId}}</view>
 </view>

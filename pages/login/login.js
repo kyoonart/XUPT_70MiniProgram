@@ -61,11 +61,12 @@ Page({
                             dataType: 'json',
                             responseType: 'text',
                             success: (result) => {
-                                console.log(result);
                                 let token = result.data.data.token;
                                 let openId = result.data.data.userInfo.openid
+                                let verifyStatus = result.data.data.userInfo.verifyStatus
                                 wx.setStorageSync('token', token)
                                 wx.setStorageSync('openid', openId)
+                                wx.setStorageSync('verifyStatus', verifyStatus)
                                 wx.switchTab({
                                     url: '../home/index',
                                 });

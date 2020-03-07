@@ -66,6 +66,11 @@ Page({
             })
         }
     },
+    handleBack() {
+        wx.switchTab({
+            url: '../home/index'
+        })
+    },
     // bindChange() {
     formSubmit: function(e) {
         const { fullName, studentId } = e.detail.value;
@@ -81,11 +86,9 @@ Page({
         wx.login({
             timeout: 10000,
             success: (res) => {
-                let code = res.code;
                 const baseUrl = "http://m2t9650514.qicp.vip";
                 wx.getUserInfo({
                     success: function(res) {
-                        let userInfo = JSON.stringify(res.userInfo);
                         wx.request({
                             url: baseUrl + `/wxReq/alumniVerification`,
                             data: {
@@ -100,6 +103,8 @@ Page({
                             responseType: 'text',
                             success: (res) => {
                                 if (res.data.code === 200) {
+                                    wx.getStorageSync('data', res.data.data);
+                                    wx.setStorageSync('verifyStatus', res.data.data.verifyStatus)
                                     wx.showLoading({
                                         title: '正在验证中',
                                         mask: true,

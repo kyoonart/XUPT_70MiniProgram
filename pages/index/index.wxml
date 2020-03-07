@@ -113,7 +113,7 @@
 	</view>
 	<button   class="weui-btn submit" formType="submit" data-type='2' style='width:520rpx;background-color:#fff;color:#0142AA;font-weight:bold;' type="primary">
 		立即验证
-	</button></form>
-	
+	</button>
+	</form>
+	<button   class="weui-btn back"  bindtap="handleBack" style='width:520rpx;background-color:#fff;color:#0142AA;font-weight:bold;' type="primary">取消</button>
 </view>
-

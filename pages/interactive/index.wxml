@@ -87,7 +87,7 @@
 		</view>
 	</view>
 </view>
-<navigator class="submit" url="../sendInterActive/index">
+<view class="submit" bindtap="handleVer">
 	<image src="../../image/icon/write.png" mode="widthFix" />
-</navigator>
+</view>
 
