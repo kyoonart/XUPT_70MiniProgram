@@ -7,6 +7,7 @@
 }
 .swiper swiper {
   padding: 10rpx 30rpx;
+  height: 350rpx;
 }
 .index_info {
   margin: 5rpx 5rpx 5rpx 30rpx;
@@ -52,7 +53,7 @@
   margin-top: 5rpx;
   color: #636363;
   position: relative;
-  left: -14rpx;
+  left: -16rpx;
 }
 .index_bigimg {
   padding: 18rpx 30rpx;
