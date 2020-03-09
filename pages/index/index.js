@@ -124,7 +124,6 @@ Page({
                                         success: (result) => {},
                                     });
                                 }
-
                             },
                         });
                     }

@@ -13,7 +13,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        let data = wx.wx.getStorageSync('data');
+        let data = wx.getStorageSync('data');
         this.setData({
             id: data.userId,
             studentId: data.studentId

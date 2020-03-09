@@ -5,12 +5,13 @@
 <view class="contents">
    <view class="header">
     <view class="title">我校召开疫情防控工作部署会 </view>
-    	<view class="set middle">
+        <view class="set middle" bindtap="handleToComment">
 				<view class="share">
 					<image src="../../image/icon/message.png" mode="widthFix" />
 				</view>
 				<text>326</text>
 			</view>
+          
 			<view class="set left">
 				<view class="share">
 					<image src="../../image/icon/good.png" mode="widthFix" />

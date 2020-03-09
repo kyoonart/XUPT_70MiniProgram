@@ -69,7 +69,7 @@
 				</view>
 				<text>20</text>
 			</view>
-			<navigator url="../comment/index?id={{item.id}}&type=1">
+			<navigator url="../comment/index?id={{item.id}}&type=2">
 				<view class="set middle">
 					<view class="share">
 						<image src="../../image/icon/message.png" mode="widthFix" />

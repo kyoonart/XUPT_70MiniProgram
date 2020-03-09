@@ -1,5 +1,5 @@
 <view class="index_news" wx:for="{{list}}" wx:key="id">
-	<navigator url="../newsDetail/index">
+	<navigator url="../newsDetail/index?id={{item.id}}">
 		<view class="news_content">
 		<view class="news_img">
 			<image src="../../image/icon/zls.png" mode="widthFix" />

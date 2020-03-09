@@ -1,7 +1,9 @@
+<form  bindsubmit='handleSend'>
 <view class="content">
-    <view class="input"><input type="text" placeholder="写下你的评论"confirm-type="send" /></view>
-    <view class="send_btn"> <view>发布</view></view>   
+    <view class="input"><input type="text"  class="weui-input" auto-focus value="{{inputVal}}" placeholder="写下你的评论" confirm-type="send" /></view>
+    <view class="send_btn"><button formType="submit">发布</button></view>   
 </view>
+</form>
 <view class="page" wx:for="{{lists}}" wx:key="id">
     <view class="page_person">
        <view class="person_header"> 

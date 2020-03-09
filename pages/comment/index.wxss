@@ -14,9 +14,9 @@ page {
   padding: 10rpx;
   border-radius: 10rpx;
 }
-.content .send_btn {
+.content button {
   background-color: #007EFF;
-  width: 100rpx;
+  width: 120rpx;
   height: 80rpx;
   line-height: 80rpx;
   text-align: center;

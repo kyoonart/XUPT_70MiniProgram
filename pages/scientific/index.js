@@ -23,7 +23,7 @@ Page({
             responseType: 'text',
             success: (result) => {
                 let res = result.data.data;
-                console.log(res);
+                console.log(res.id);
                 this.setData({
                     lists: res,
                 })
