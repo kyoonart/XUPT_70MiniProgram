@@ -92,7 +92,7 @@ Page({
                         wx.request({
                             url: baseUrl + `/wxReq/alumniVerification`,
                             data: {
-                                type: type,
+                                type: type - 0,
                                 fullName: fullName,
                                 studentId: studentId,
                                 openid: wx.getStorageSync('openid')
@@ -102,8 +102,8 @@ Page({
                             dataType: 'json',
                             responseType: 'text',
                             success: (res) => {
-                                if (res.data.code === 200) {
-                                    wx.getStorageSync('data', res.data.data);
+                                if (res.data.code === 500) {
+                                    wx.setStorageSync('data', res.data.data);
                                     wx.setStorageSync('verifyStatus', res.data.data.verifyStatus)
                                     wx.showLoading({
                                         title: '正在验证中',
