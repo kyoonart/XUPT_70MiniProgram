@@ -77,8 +77,8 @@
 <view class="index_bigimg">
     <image src="../../image/icon/bar.png"  mode="widthFix"/>
 </view>
-<view class="index_news">
-    <view class="news_title"><text>······新闻中心······</text></view>
+<navigator url="../schoolNews/index" class="index_news">
+    <view class="news_title"><text>······ 新闻中心 ······</text></view>
    <view class="news_content">
         <view class="news_img"><image src="../../image/icon/zls.png" mode="widthFix" /></view>
         <view class="news_detail">
@@ -87,7 +87,7 @@
         <view class="detail_data">2019/12/20</view>
    </view>
    </view>
-   </view>
+   </navigator>
 <view class="index_footer">
     <text>查看更多</text>
 </view>

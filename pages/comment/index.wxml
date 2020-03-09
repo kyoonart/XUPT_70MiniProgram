@@ -1,19 +1,28 @@
-<form  bindsubmit='handleSend'>
-<view class="content">
-    <view class="input"><input type="text"  class="weui-input" auto-focus value="{{inputVal}}" placeholder="写下你的评论" confirm-type="send" /></view>
-    <view class="send_btn"><button formType="submit">发布</button></view>   
-</view>
+<form bindsubmit='handleSend'>
+  <view class="content">
+    <view class="input">
+      <input type="text" class="weui-input" auto-focus value="{{inputVal}}" placeholder="写下你的评论"
+        bindinput='formName'
+       confirm-type="send" />
+    </view>
+    <view class="send_btn">
+      <button formType="submit">发布</button>
+    </view>
+  </view>
 </form>
 <view class="page" wx:for="{{lists}}" wx:key="id">
-    <view class="page_person">
-       <view class="person_header"> 
-            <view class="person_icon">
-             <image src="../../image/icon/icon.png" mode="widthFix"/>
-        </view>    
-       <text>{{item.userName}}</text>
-       </view>  
-       <view class="page_address"><text>{{item.contents}}</text></view> 
-       <view class="page_data"><text>{{item.createTime}}</text></view>
+  <view class="page_person">
+    <view class="person_header">
+      <view class="person_icon">
+        <image src="../../image/icon/icon.png" mode="widthFix" />
+      </view>
+      <text>{{item.userName}}</text>
     </view>
+    <view class="page_address">
+      <text>{{item.contents}}</text>
     </view>
-  
+    <view class="page_data">
+      <text>{{item.createTime}}</text>
+    </view>
+  </view>
+</view>
