@@ -102,7 +102,7 @@ Page({
                             dataType: 'json',
                             responseType: 'text',
                             success: (res) => {
-                                if (res.data.code === 500) {
+                                if (res.data.code === 200) {
                                     wx.setStorageSync('data', res.data.data);
                                     wx.setStorageSync('verifyStatus', res.data.data.verifyStatus)
                                     wx.showLoading({
