@@ -13,10 +13,10 @@ Page({
         let verifyStatus = wx.getStorageSync('verifyStatus');
         if (verifyStatus == 0) {
             wx.showToast({
-                title: '请您先进行校友验证',
+                title: '请您先在首页校友验证',
                 icon: 'none',
                 image: '',
-                duration: 1000,
+                duration: 3000,
                 mask: false,
                 success: (result) => {
 
@@ -34,10 +34,10 @@ Page({
         let verifyStatus = wx.getStorageSync('verifyStatus');
         if (verifyStatus == 0) {
             wx.showToast({
-                title: '请您先进行校友验证',
+              title: '请您先在首页校友验证',
                 icon: 'none',
                 image: '',
-                duration: 1000,
+                duration: 3000,
                 mask: false,
                 success: (result) => {
 
@@ -55,10 +55,10 @@ Page({
         let verifyStatus = wx.getStorageSync('verifyStatus');
         if (verifyStatus == 0) {
             wx.showToast({
-                title: '请您先进行校友验证',
+              title: '请您先在首页校友验证',
                 icon: 'none',
                 image: '',
-                duration: 1000,
+                duration: 3000,
                 mask: false,
                 success: (result) => {
 

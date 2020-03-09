@@ -19,7 +19,7 @@ Page({
             title: '70周年正在开发中',
             // icon: 'none',
             image: '../../image/icon/load.png',
-            duration: 1000,
+            duration: 3000,
             mask: false,
             success: (result) => {
 
