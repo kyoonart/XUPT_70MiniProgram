@@ -20,7 +20,7 @@ page {
   height: 90rpx;
   border-top: 2rpx solid #ccc;
   position: relative;
-  top: 650rpx;
+  top: 100rpx;
   bottom: 0;
   right: 0;
   left: 0;

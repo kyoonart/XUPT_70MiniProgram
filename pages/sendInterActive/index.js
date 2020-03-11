@@ -8,6 +8,15 @@ Page({
         pics: [], //图片
     },
 
+  bindClick(e){
+    wx.showToast({
+      title: '发布成功，等待后台审核',
+      icon: 'none',
+      duration: 2000,
+      mask: false,
+    })
+  },
+
     /**
      * 生命周期函数--监听页面加载
      */

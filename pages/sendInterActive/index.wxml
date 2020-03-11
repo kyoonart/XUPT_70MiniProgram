@@ -28,6 +28,6 @@
 	<image src='../../image/icon/upadd.png' mode="widthFix" />
 </view>
 <view class="btn">
-	<view class="btn_send">发布</view>
+	<view class="btn_send" bindtap='bindClick'>发布</view>
 </view>
 

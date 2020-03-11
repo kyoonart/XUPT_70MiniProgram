@@ -131,7 +131,7 @@ Page({
                   wx.showToast({
                     title: '验证失败',
                     icon: 'none',
-                    duration: 200,
+                    duration: 2000,
                     mask: false,
                     success: (result) => {},
                   });
