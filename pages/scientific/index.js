@@ -2,16 +2,16 @@
 Page({
     data: {
         lists: [],
-        base: "http://m2t9650514.qicp.vip"
+        base: "http://m2t9650514.qicp.vip",
+        Id: 0
     },
     //options(Object)
     onLoad: function(options) {
         this.getInfo(options.id);
-
     },
-    handleChange() {
+    handleToComment() {
         wx.redirectTo({
-            url: '../comment/index'
+            url: `../comment/index?id=${this.data.Id}&type=3`
         })
     },
     getInfo(id) {
@@ -23,9 +23,10 @@ Page({
             responseType: 'text',
             success: (result) => {
                 let res = result.data.data;
-                console.log(res.id);
+                console.log(res);
                 this.setData({
                     lists: res,
+                    Id: res.id
                 })
 
 

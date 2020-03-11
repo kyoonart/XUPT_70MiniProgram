@@ -6,19 +6,19 @@
 	<view class="contents">
 		<view class="header">
     <view class="title">{{lists.projectName}}项目简介</view>
-    	<navigator url="../comment/index?id={{lists.id}}&type=3">
-		<view class="set middle">
+    	
+		<view class="set middle" bindtap="handleToComment">
 				<view class="share" bindtap="handleChange">
 					<image src="../../image/icon/message.png" mode="widthFix" />
 				</view>
 				<text>{{lists.commentNums}}</text>
 			</view>
-			</navigator>
+		
 			<view class="set left">
 				<view class="share">
 					<image src="../../image/icon/good.png" mode="widthFix" />
 				</view>
-				<text>{{lists.releaseStatus}}</text>
+				<text>{{lists.likeNums}}</text>
 			</view>
    </view>
 		<view class="content">
