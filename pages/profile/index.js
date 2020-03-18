@@ -1,4 +1,4 @@
-// import { request } from "../../request/index.js"
+import { request } from '../../utils/request'
 Page({
     data: {
         schoolName: '',
@@ -10,49 +10,40 @@ Page({
         principal: '',
         vicePrincipal: '',
         schoolProfile: '',
-        base: 'http://m2t9650514.qicp.vip',
+        base: 'https://xiaoyou.oubamall.com',
         lists: []
     },
-    //options(Object)
     onLoad: function(options) {
         this.getInfo()
     },
     getInfo() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + '/wxReq/schoolInfo',
-            header: { 'content-type': 'application/json' },
+        request({
+            url: '/wxReq/schoolInfo',
             method: 'GET',
             dataType: 'json',
-            success: (result) => {
-                let res = result.data.data
-                this.setData({
-                    schoolName: res.schoolName,
-                    schoolEstablishmentTime: res.schoolEstablishmentTime,
-                    dwsj: res.dwsj,
-                    jwsj: res.jwsj,
-                    dwfsj: res.dwfsj,
-                    accountant: res.accountant,
-                    principal: res.principal,
-                    vicePrincipal: res.vicePrincipal,
-                    schoolProfile: res.schoolProfile,
-                })
-            },
-        });
-        wx.request({
-            url: baseUrl + '/wxReq/previousLeaders?pageNum=1&pageSize=10',
-            header: { 'content-type': 'application/json' },
-            method: 'GET',
-            dataType: 'json',
-            responseType: 'text',
-            success: (result) => {
-                let res = result.data.data.rows;
-                this.setData({
-                    lists: res,
-                    // imgUrl: baseUrl + res[i++].avatar
-                })
-            },
-        });
-    }
 
+        }).then((res) => {
+            this.setData({
+                schoolName: res.schoolName,
+                schoolEstablishmentTime: res.schoolEstablishmentTime,
+                dwsj: res.dwsj,
+                jwsj: res.jwsj,
+                dwfsj: res.dwfsj,
+                accountant: res.accountant,
+                principal: res.principal,
+                vicePrincipal: res.vicePrincipal,
+                schoolProfile: res.schoolProfile,
+            })
+        });
+        request({
+            url: '/wxReq/previousLeaders?pageNum=1&pageSize=10',
+            method: 'GET',
+            dataType: 'json',
+            responseType: 'text'
+        }).then((res) => {
+            this.setData({
+                lists: res.rows,
+            })
+        })
+    }
 });

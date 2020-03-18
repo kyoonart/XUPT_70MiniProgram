@@ -42,7 +42,7 @@ Page({
         }
     },
     bindChange() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
+        const baseUrl = "https://xiaoyou.oubamall.com";
         wx.login({
             timeout: 10000,
             success: (res) => {
@@ -65,11 +65,11 @@ Page({
                                 let token = result.data.data.token;
                                 let openId = result.data.data.userInfo.openid
                                 let verifyStatus = result.data.data.userInfo.verifyStatus
-                              let userId = result.data.data.userInfo.userId
+                                let userId = result.data.data.userInfo.userId
                                 wx.setStorageSync('token', token)
                                 wx.setStorageSync('openid', openId)
                                 wx.setStorageSync('verifyStatus', verifyStatus)
-                              wx.setStorageSync('userId', userId)
+                                wx.setStorageSync('userId', userId)
                                 wx.switchTab({
                                     url: '../home/index',
                                 });

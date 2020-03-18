@@ -1,8 +1,9 @@
 //Page Object
+import { request } from '../../utils/request'
 Page({
     data: {
         lists: [],
-        base: "http://m2t9650514.qicp.vip"
+        base: "https://xiaoyou.oubamall.com"
     },
     //options(Object)
     onLoad: function(options) {
@@ -10,22 +11,17 @@ Page({
 
     },
     getInfo() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + '/wxReq/previousLeaders?pageNum=1&pageSize=10',
-            header: { 'content-type': 'application/json' },
+        request({
+            url: '/wxReq/previousLeaders?pageNum=1&pageSize=10',
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
-            success: (result) => {
-                let res = result.data.data.rows;
-                this.setData({
-                    lists: res,
-                    // imgUrl: baseUrl + res[i++].avatar
-                })
 
+        }).then((res) => {
+            this.setData({
+                lists: res.rows,
+            })
+        })
 
-            },
-        });
     }
 });

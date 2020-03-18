@@ -1,4 +1,5 @@
 //Page Object
+import { request } from '../../utils/request'
 Page({
     data: {
         list: []
@@ -8,20 +9,16 @@ Page({
         this.getInfo()
     },
     getInfo() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + '/wxReq/news?pageNum=1&pageSize=10',
-            header: { 'content-type': 'application/json' },
+        // const baseUrl = "http://m2t9650514.qicp.vip";
+        request({
+            url: '/wxReq/news?pageNum=1&pageSize=10',
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
-            success: (result) => {
-                let res = result.data.data
-                this.setData({
-                    list: res.rows
-                })
-            },
-
-        });
+        }).then((res) => {
+            this.setData({
+                list: res.rows
+            })
+        })
     }
 });

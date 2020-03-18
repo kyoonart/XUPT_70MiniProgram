@@ -8,7 +8,7 @@
 	 indicator-active-color="#FFFFFf"
 	>
 		<swiper-item>
-			<image src="../../image/icon/swiper.png" mode="widthFix" />
+			<image src="https://s1.ax1x.com/2020/03/18/80ekTS.png" mode="widthFix" />
 		</swiper-item>
 		<swiper-item>
 			<image src="../../image/icon/swiper.png" mode="widthFix" />

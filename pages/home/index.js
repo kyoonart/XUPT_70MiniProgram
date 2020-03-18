@@ -1,11 +1,27 @@
+import { request } from '../../utils/request.js';
 Page({
     data: {
-
+        imgUrl: []
+    },
+    onLoad: function() {
+        this.getSwiperImgUrl()
     },
     handleChange() {
         wx.switchTab({
             url: '../seventy/index'
         });
+    },
+    getSwiperImgUrl() {
+        request({
+            url: '/wxReq/carousel',
+            data: { pageNum: 1, pageSize: 10 },
+            method: 'GET'
+        }).then((res) => {
+            this.setData({
+                imgUrl: res.rows
+            })
+        })
+
     },
     handleVer() {
         let verifyStatus = wx.getStorageSync('verifyStatus');

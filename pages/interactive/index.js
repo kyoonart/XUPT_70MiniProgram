@@ -1,31 +1,25 @@
 //Page Object
+import { request } from '../../utils/request'
 Page({
     data: {
         lists: [],
-        base: "http://m2t9650514.qicp.vip"
+        base: "https://xiaoyou.oubamall.com"
     },
     //options(Object)
     onLoad: function(options) {
         this.getInfo();
     },
     getInfo() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + '/wxReq/activity?pageNum=1&pageSize=10',
-            header: { 'content-type': 'application/json' },
+        request({
+            url: '/wxReq/activity?pageNum=1&pageSize=10',
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
-            success: (result) => {
-                let res = result.data.data.rows;
-                this.setData({
-                    lists: res,
-
-                })
-
-
-            },
-        });
+        }).then((res) => {
+            this.setData({
+                lists: res.rows,
+            })
+        })
     },
     handleVer() {
         let verifyStatus = wx.getStorageSync('verifyStatus');

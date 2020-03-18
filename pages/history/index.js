@@ -1,4 +1,5 @@
 //Page Object
+import { request } from '../../utils/request.js'
 Page({
     data: {
         content: '',
@@ -9,21 +10,17 @@ Page({
         this.getInfo()
     },
     getInfo() {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + '/wxReq/schoolHistory',
-            header: { 'content-type': 'application/json' },
+        const baseUrl = "https://xiaoyou.oubamall.com";
+        request({
+            url: '/wxReq/schoolHistory',
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
-            success: (result) => {
-                let res = result.data.data
-                this.setData({
-                    content: res.contents,
-                    imgUrl: baseUrl + res.imgUrl
-                })
-            },
-
-        });
+        }).then((res) => {
+            this.setData({
+                content: res.contents,
+                imgUrl: baseUrl + res.imgUrl
+            })
+        })
     }
 });

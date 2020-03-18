@@ -1,8 +1,9 @@
 //Page Object
+import { request } from '../../utils/request'
 Page({
     data: {
         lists: [],
-        base: "http://m2t9650514.qicp.vip",
+        base: "https://xiaoyou.oubamall.com",
         Id: 0
     },
     //options(Object)
@@ -15,22 +16,16 @@ Page({
         })
     },
     getInfo(id) {
-        const baseUrl = "http://m2t9650514.qicp.vip";
-        wx.request({
-            url: baseUrl + `/wxReq/project/${id}`,
+        request({
+            url: `/wxReq/project/${id}`,
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
-            success: (result) => {
-                let res = result.data.data;
-                console.log(res);
-                this.setData({
-                    lists: res,
-                    Id: res.id
-                })
-
-
-            },
-        });
+        }).then((res) => {
+            this.setData({
+                lists: res,
+                Id: res.id
+            })
+        })
     }
 });
