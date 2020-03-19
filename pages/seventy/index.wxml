@@ -1,12 +1,12 @@
 <view class="container" bindtap="handleTips">
-  <image src="../../image/70tab/70tab3.png" mode="widthFix" />
+  <image src="https://s1.ax1x.com/2020/03/19/8ye9V1.png" mode="widthFix" />
 </view>
 
 <view class="news_title">
   <text>······ 校庆活动 ······</text>
 </view>
 <view class="img-container" bindtap="handleTips">
-  <image src="../../image/70tab/70tab1.png" mode="widthFix" />
+  <image src="https://s1.ax1x.com/2020/03/19/8yeSbR.png" mode="widthFix" />
   <view class='img-text'>
     <view class='img-textarea'>学术大师大讲堂之美国工程院院士Yale Patt教授专题讲座举行</view>
   </view>
@@ -14,7 +14,7 @@
 </view>
 
 <view class="img-container" bindtap="handleTips">
-  <image src="../../image/70tab/70tab2.png" mode="widthFix" />
+  <image src="https://s1.ax1x.com/2020/03/19/8yeP56.png" mode="widthFix" />
   <view class='img-text'>
     <view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
   </view>

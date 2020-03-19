@@ -1,7 +1,7 @@
 <view wx:for="{{lists}}" wx:key="id">
 	<navigator url="../scientific/index?id={{item.id}}">
 	<view class="img-container">
-		<image src="{{base}}{{item.pimg.imgUrl}}" mode="widthFix" />
+		<image src="{{base}}{{item.pimg[0].imgUrl}}" mode="widthFix" />
 		<view class='img-text'>
 			<view class='img-textarea'>{{item.leaderIntroduction}}</view>
 		</view>

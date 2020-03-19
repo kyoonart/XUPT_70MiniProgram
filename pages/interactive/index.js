@@ -3,7 +3,8 @@ import { request } from '../../utils/request'
 Page({
     data: {
         lists: [],
-        base: "https://xiaoyou.oubamall.com"
+        base: "https://xiaoyou.oubamall.com",
+        contents: []
     },
     //options(Object)
     onLoad: function(options) {
@@ -16,8 +17,14 @@ Page({
             dataType: 'json',
             responseType: 'text',
         }).then((res) => {
+            let arr = res.rows
+            arr = arr.map((item, index) => {
+                let reg = /<[^<>]+>/g;
+                return item.contents.replace(reg, '')
+            })
             this.setData({
                 lists: res.rows,
+                contents: arr
             })
         })
     },

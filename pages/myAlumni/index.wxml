@@ -11,19 +11,19 @@
 		<view current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
 			<view wx:for="{{navbarTitle}}" wx:key="index"  >
 					<view class="img-container">
-						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<image src="https://s1.ax1x.com/2020/03/19/8yeP56.png" mode="widthFix" />
 						<view class='img-text'>
 							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
 						</view>
 					</view>
 					<view class="img-container">
-						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<image src="https://s1.ax1x.com/2020/03/19/8yeP56.png" mode="widthFix" />
 						<view class='img-text'>
 							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
 						</view>
 					</view>
 					<view class="img-container">
-						<image src="../../image/70tab/70tab2.png" mode="widthFix" />
+						<image src="https://s1.ax1x.com/2020/03/19/8yeP56.png" mode="widthFix" />
 						<view class='img-text'>
 							<view class='img-textarea'>西安郵電大学建校70周年校庆文艺晚会举行</view>
 						</view>

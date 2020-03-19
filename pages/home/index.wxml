@@ -7,13 +7,11 @@
 	 indicator-color="rgba(255, 255, 255, .6)"
 	 indicator-active-color="#FFFFFf"
 	>
-		<swiper-item>
-			<image src="https://s1.ax1x.com/2020/03/18/80ekTS.png" mode="widthFix" />
+		<swiper-item wx:for="{{imgUrl}}" wx:key="id">
+			<image src="{{base}}{{item.imgUrl}}" mode="widthFix" />
 		</swiper-item>
-		<swiper-item>
-			<image src="../../image/icon/swiper.png" mode="widthFix" />
-		</swiper-item>
-	</swiper>
+		
+	</swiper>  
 </view>
 <!-- 通知 -->
 <view class="index_info" bindtap = "handleChange">
@@ -75,7 +73,7 @@
 </view>
 <!-- 大图 -->
 <view class="index_bigimg">
-    <image src="../../image/icon/bar.png"  mode="widthFix"/>
+    <image src="https://s1.ax1x.com/2020/03/19/8sIk5D.png"  mode="widthFix"/>
 </view>
 <navigator url="../schoolNews/index" class="index_news">
     <view class="news_title"><text>······ 新闻中心 ······</text></view>

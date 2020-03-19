@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-   <view class="btn" bindtap="bindChange">立即登录</view>
+   <button class="btn" bindtap="bindChange">立即登录</button>
   </view>
 </view>

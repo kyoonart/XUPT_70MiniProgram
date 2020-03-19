@@ -91,7 +91,7 @@ Page({
     Login(fullName, studentId, type) {
         wx.login({
             success: (res) => {
-                const baseUrl = "http://m2t9650514.qicp.vip";
+                const baseUrl = "https://xiaoyou.oubamall.com";
                 wx.getUserInfo({
                     success: function(res) {
                         type = Number(type)

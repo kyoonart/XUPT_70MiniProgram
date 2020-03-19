@@ -49,6 +49,10 @@ input {
     padding-left: 20rpx;
 }
 
+.weui-cell__bd {
+    width: 80%!important;
+}
+
 .submit {
     height: 82rpx;
     line-height: 82rpx;

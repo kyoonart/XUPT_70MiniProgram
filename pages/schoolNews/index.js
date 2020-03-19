@@ -2,14 +2,14 @@
 import { request } from '../../utils/request'
 Page({
     data: {
-        list: []
+        list: [],
+        base: 'https://xiaoyou.oubamall.com'
     },
     //options(Object)
     onLoad: function(options) {
         this.getInfo()
     },
     getInfo() {
-        // const baseUrl = "http://m2t9650514.qicp.vip";
         request({
             url: '/wxReq/news?pageNum=1&pageSize=10',
             method: 'GET',

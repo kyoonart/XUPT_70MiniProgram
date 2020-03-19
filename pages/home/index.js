@@ -1,7 +1,8 @@
 import { request } from '../../utils/request.js';
 Page({
     data: {
-        imgUrl: []
+        imgUrl: [],
+        base: 'https://xiaoyou.oubamall.com'
     },
     onLoad: function() {
         this.getSwiperImgUrl()

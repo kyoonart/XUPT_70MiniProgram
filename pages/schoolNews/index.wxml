@@ -2,7 +2,7 @@
 	<navigator url="../newsDetail/index?id={{item.id}}">
 		<view class="news_content">
 		<view class="news_img">
-			<image src="../../image/icon/zls.png" mode="widthFix" />
+			<image src="{{base}}{{item.imgUrl}}" mode="widthFix" />
 		</view>
 		<view class="news_detail">
 			<view class="detail_title">{{item.newsTitle}}</view>

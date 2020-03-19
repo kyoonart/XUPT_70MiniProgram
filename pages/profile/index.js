@@ -11,7 +11,9 @@ Page({
         vicePrincipal: '',
         schoolProfile: '',
         base: 'https://xiaoyou.oubamall.com',
-        lists: []
+        lists: [],
+        imgUrl: []
+
     },
     onLoad: function(options) {
         this.getInfo()
@@ -23,6 +25,7 @@ Page({
             dataType: 'json',
 
         }).then((res) => {
+            console.log(res);
             this.setData({
                 schoolName: res.schoolName,
                 schoolEstablishmentTime: res.schoolEstablishmentTime,
@@ -33,6 +36,7 @@ Page({
                 principal: res.principal,
                 vicePrincipal: res.vicePrincipal,
                 schoolProfile: res.schoolProfile,
+                imgUrl: res.imgUrl
             })
         });
         request({

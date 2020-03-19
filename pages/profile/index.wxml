@@ -1,5 +1,5 @@
 <view class="header">
-	<image src="../../image/icon/bar2.png" mode="widthFix" />
+	<image src="{{base}}{{imgUrl[1]}}" mode="widthFix" />
 </view>
 <view class="index_news">
 	<view class="news_title">
@@ -8,7 +8,7 @@
 	<navigator url="../summary/index" >
 		<view class="news_content">
 		<view class="news_img">
-			<image src="../../image/icon/dahuo.png" mode="widthFix" />
+			<image src="{{base}}{{imgUrl[0]}}" mode="widthFix" />
 		</view>
 		<view class="news_detail">
 			<view class="detail_title">学校简介</view>
@@ -89,7 +89,7 @@
 	<navigator url="../history/index">
 	<view class="news_content">
 		<view class="news_img">
-			<image src="../../image/icon/history1.png" mode="widthFix" />
+			<image src="{{base}}{{imgUrl[2]}}" mode="widthFix" />
 		</view>
 		<view class="news_detail">
 			<view class="detail_title">历史沿革</view>

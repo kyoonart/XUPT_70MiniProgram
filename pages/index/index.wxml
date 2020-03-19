@@ -84,7 +84,7 @@
 				<view class="weui-cell__hd">
 					<image style='height:30px;width:30px;' src='../../image/icon/study.png' />
 				</view>
-				<view class="weui-cell__bd">
+				<view class="weui-cell__bd" style="width:80%">
 					<input
 					 class="weui-input"
 					 type="number"

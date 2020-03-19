@@ -11,11 +11,6 @@ Page({
             url: '../logs/logs'
         })
     },
-    // bindChange() {
-    //     wx.switchTab({
-    //         url: '../home/index',
-    //     });
-    // },
     onLoad: function() {
         if (app.globalData.userInfo) {
             this.setData({
