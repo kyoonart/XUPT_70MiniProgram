@@ -73,7 +73,7 @@
 </view>
 <!-- 大图 -->
 <view class="index_bigimg">
-    <image src="https://s1.ax1x.com/2020/03/19/8sIk5D.png"  mode="widthFix"/>
+    <image src="https://s1.ax1x.com/2020/03/20/8gegE9.png"  mode="widthFix"/>
 </view>
 <navigator url="../schoolNews/index" class="index_news">
     <view class="news_title"><text>······ 新闻中心 ······</text></view>

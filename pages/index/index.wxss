@@ -9,7 +9,7 @@ page {
 }
 
 .container {
-    height: 106%;
+    height: 100%;
 }
 
 .userinfo {
@@ -49,6 +49,10 @@ input {
     padding-left: 20rpx;
 }
 
+form {
+    box-sizing: border-box;
+}
+
 .weui-cell__bd {
     width: 80%!important;
 }
@@ -56,6 +60,7 @@ input {
 .submit {
     height: 82rpx;
     line-height: 82rpx;
+    margin-top: -100rpx;
 }
 
 .back {
