@@ -9,6 +9,7 @@
 	<view class="img_detail">
 		{{item.introduction}}
 	</view></navigator>
+	<!--
 	<view class="liked">
 		<view class="item">
 			<view class="share">
@@ -22,6 +23,6 @@
 			</view>
 			<text>{{item.likeNums}}</text>
 		</view>
-	</view>
+	</view>-->
 </view>
 

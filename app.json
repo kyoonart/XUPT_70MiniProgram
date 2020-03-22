@@ -22,7 +22,8 @@
         "pages/researchdevelopment/index",
         "pages/comment/index",
         "pages/sendInterActive/index",
-        "pages/backSchoolMap/index"
+        "pages/backSchoolMap/index",
+        "pages/activeDetitle/index"
 
     ],
     "window": {

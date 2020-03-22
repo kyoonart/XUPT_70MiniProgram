@@ -15,14 +15,15 @@ Page({
 
     },
     handleTips() {
-        wx.showToast({
-            title: '70周年正在开发中',
-            // icon: 'none',
-            image: '../../image/icon/load.png',
-            duration: 3000,
-            mask: false,
+        wx.showModal({
+            content: '70周年模块正在开发中',
+            showCancel: false,
+            cancelText: '取消',
+            cancelColor: '#000000',
+            confirmText: '确定',
+            confirmColor: '#014a95',
             success: (result) => {
-
+                if (result.confirm) {}
             },
             fail: () => {},
             complete: () => {}

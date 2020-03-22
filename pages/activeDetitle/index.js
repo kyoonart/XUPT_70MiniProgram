@@ -7,10 +7,10 @@ Page({
         commentNums: 0,
         createTime: 0,
         likeNums: 0,
-        newsContents: 0,
         imgUrl: '',
-        newsTitle: '',
-        videoUrl: '',
+        activityTitle: '',
+        introduction: '',
+        contents: '0',
         status: 0,
         url2: '../../image/icon/goodA.png',
         url1: '../../image/icon/good.png'
@@ -18,32 +18,32 @@ Page({
     onLoad: function(options) {
         this.data.id = options.id;
         this.getNewsContent(this.data.id)
-        this.handlelikeStart()
+        this.handlelikeStart(options.id)
     },
     handleToComment() {
+        console.log(this.data.id);
         wx.navigateTo({
-            url: `../comment/index?id=${this.data.id}&type=1`,
+            url: `../comment/index?id=${this.data.id}&type=2`,
             success: (result) => {
                 console.log(result);
             },
         })
     },
     getNewsContent(id) {
-        console.log(id);
         request({
-            url: `/wxReq/news/${id}`,
+            url: `/wxReq/activity/${id}`,
             method: 'GET',
             dataType: 'json',
             responseType: 'text',
         }).then((res) => {
+            let reg = /<[^<>]+>/g;
+            let arr = res.contents.replace(reg, '')
             this.setData({
                 commentNums: res.commentNums,
-                commentNums: res.commentNums,
                 likeNums: res.likeNums,
-                newsContents: res.newsContents,
+                contents: arr,
                 imgUrl: res.imgUrl,
-                newsTitle: res.newsTitle,
-                videoUrl: res.videoUrl,
+                activityTitle: res.activityTitle,
                 createTime: res.createTime
             })
         })
@@ -54,7 +54,7 @@ Page({
             url: '/wxReq/like',
             method: 'POST',
             data: {
-                topicType: 1,
+                topicType: 2,
                 topicId: this.data.id,
                 userId: userId,
             },

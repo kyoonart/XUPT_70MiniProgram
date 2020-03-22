@@ -14,9 +14,9 @@
 				<text>{{lists.commentNums}}</text>
 			</view>
 		
-			<view class="set left">
+			<view class="set left" bindtap="handlelikeStart">
 				<view class="share">
-					<image src="../../image/icon/good.png" mode="widthFix" />
+					<image  src="{{!!status?url2:url1}}"  mode="widthFix" />
 				</view>
 				<text>{{lists.likeNums}}</text>
 			</view>

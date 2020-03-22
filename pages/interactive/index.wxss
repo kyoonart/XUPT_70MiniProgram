@@ -43,6 +43,11 @@
 .page .page_person .page_address {
   margin-top: -8rpx;
   padding-right: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .page .page_person .page_address text {
   color: #8D8D8D;

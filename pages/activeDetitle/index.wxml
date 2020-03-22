@@ -4,7 +4,7 @@
 <!-- 详情 -->
 <view class="contents">
    <view class="header">
-    <view class="title">{{newsTitle}} </view>
+    <view class="title">{{activityTitle}} </view>
         <view class="set middle" bindtap = "handleToComment">
 				<view class="share">
 					<image src="../../image/icon/message.png" mode="widthFix" />
@@ -21,7 +21,7 @@
    </view>
     <view class="data">{{createTime}}</view> 
 	<view class="content">
-    {{newsContents}}
+    {{contents}}
         </view>
 </view>
 

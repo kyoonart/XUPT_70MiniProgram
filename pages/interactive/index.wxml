@@ -53,10 +53,10 @@
 			</view>
 			<text>张子轩</text>
 		</view>
-
+		<navigator url="../activeDetitle/index?id={{item.id}}" >
 		<view class="page_address">
 			<text>[{{item.activityTitle}}]{{contents[index]}}</text>
-		</view>
+		</view></navigator>
 	</view>
 	<view class="page_detail">
 		<view class="detail_img">
@@ -77,9 +77,9 @@
 					<text>{{item.commentNums}}</text>
 				</view>
 			</navigator>
-			<view class="set left">
+			<view class="set left" data-id='{{item.id}}' data-index='{{index}}' bindtap = "handlelikeStart">
 				<view class="share">
-					<image src="../../image/icon/good.png" mode="widthFix" />
+					<image  src="{{item.hasChange?url2:url1}}"  mode="widthFix" />
 				</view>
 				<text>{{item.likeNums}}</text>
 			</view>

@@ -27,16 +27,16 @@ Page({
     handleVer() {
         let verifyStatus = wx.getStorageSync('verifyStatus');
         if (verifyStatus == 0) {
-            wx.showToast({
-                title: '请您先进行校友验证',
-                icon: 'none',
-                image: '',
-                duration: 1000,
-                mask: false,
+            wx.showModal({
+                content: '请您先进行校友验证',
+                showCancel: false,
+                cancelText: '取消',
+                cancelColor: '#000000',
+                confirmText: '确定',
+                confirmColor: '#014a95',
                 success: (result) => {
-
+                    if (result.confirm) {}
                 },
-
             });
         } else {
             wx.navigateTo({
