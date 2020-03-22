@@ -63,7 +63,6 @@ Page({
                                 let userId = result.data.data.userInfo.userId
                                 wx.setStorageSync('token', token)
                                 wx.setStorageSync('openid', openId)
-                                wx.setStorageSync('verifyStatus', verifyStatus)
                                 wx.setStorageSync('userId', userId)
                                 wx.switchTab({
                                     url: '../home/index',

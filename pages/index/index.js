@@ -32,7 +32,27 @@ Page({
         })
     },
     onShow() {
+        var verifyStatus = wx.getStorageSync('verifyStatus')
+        console.log(verifyStatus);
+        if (verifyStatus == 1) {
+            wx.showToast({
+                title: '您已验证无需重复验证',
+                icon: '',
+                image: '',
+                duration: 3000,
+                mask: true,
+                success: (result) => {
+                    setTimeout(function() {
+                        wx.navigateBack({
+                            delta: 1
+                        })
+                    }, 1500)
+                },
+                fail: () => {},
+                complete: () => {}
+            });
 
+        }
     },
     onLoad: function() {
         if (app.globalData.userInfo) {
@@ -105,7 +125,6 @@ Page({
                                 fullName: fullName,
                                 studentId: studentId,
                                 openid: wx.getStorageSync('openid'),
-
                             },
                             header: {
                                 "Content-Type": "application/x-www-form-urlencoded",
@@ -115,7 +134,7 @@ Page({
                             success: (res) => {
                                 console.log(res)
                                 if (res.data.code === 200) {
-                                    wx.getStorageSync('data', res.data.data);
+                                    wx.setStorageSync('data', res.data.data);
                                     wx.setStorageSync('verifyStatus', res.data.data.verifyStatus)
                                     wx.showLoading({
                                         title: '正在验证中',
