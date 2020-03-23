@@ -57,10 +57,11 @@ Page({
             dataType: 'json',
             responseType: 'text',
         }).then((res) => {
-            console.log(res)
             this.setData({
                 lists: res.rows
             })
+        }).catch(res => {
+            // console.log(res);
         })
     }
 });
