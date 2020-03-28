@@ -36,7 +36,7 @@ page {
   margin-left: -40rpx;
 }
 .middle {
-  margin-right: -55rpx;
+  margin-right: -60rpx;
 }
 .left {
   margin-top: -5rpx;
