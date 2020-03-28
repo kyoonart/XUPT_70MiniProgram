@@ -4,7 +4,7 @@
 .banner {
   display: flex;
   width: 690rpx;
-  margin-left: 68rpx;
+  margin-left: 58rpx;
   margin-top: 44rpx;
 }
 .banner .banner_content {
@@ -76,10 +76,12 @@
   margin-left: 10rpx;
 }
 .middle {
-  margin-left: -400rpx;
+  position: absolute;
+  left: 120rpx;
 }
 .left {
-  margin-right: -300rpx;
+  position: absolute;
+  right: 80rpx;
 }
 .submit {
   position: fixed;

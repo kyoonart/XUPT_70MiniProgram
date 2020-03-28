@@ -1,13 +1,29 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-   <button class="btn" bindtap="bindChange">立即登录</button>
-  </view>
+	<view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		<block wx:else>
+			<image
+			 bindtap="bindViewTap"
+			 class="userinfo-avatar"
+			 src="{{userInfo.avatarUrl}}"
+			 mode="cover"
+			/>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+	<view class="usermotto" wx:if="{{hasUserInfo}}">
+		<view class="logoBox">
+			<view class="logo">
+				<image src="../../image/icon/xylogo.jpg" mode="widthFix" />
+			</view>
+			<text class="title">西邮校友平台</text>
+		</view>
+		<view class="content" >
+			<view>获取您的信息...</view>
+			<text>西邮校友为广大校友建立通知、互动功活动展示平台</text>
+		</view>
+		<button class="btn" bindtap="bindChange">立即登录</button>
+	</view>
 </view>
+
