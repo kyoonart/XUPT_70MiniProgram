@@ -76,10 +76,10 @@
   margin-left: 10rpx;
 }
 .middle {
-  margin-left: -320rpx;
+  margin-left: -400rpx;
 }
 .left {
-  margin-right: -250rpx;
+  margin-right: -300rpx;
 }
 .submit {
   position: fixed;

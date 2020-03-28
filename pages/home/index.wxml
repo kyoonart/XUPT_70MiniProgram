@@ -75,7 +75,7 @@
 <view class="index_bigimg">
     <image src="https://s1.ax1x.com/2020/03/20/8gegE9.png"  mode="widthFix"/>
 </view>
-<navigator url="../schoolNews/index" class="index_news">
+<view class="index_news">
     <view class="news_title"><text>······ 新闻中心 ······</text></view>
    <view class="news_content">
         <view class="news_img"><image src="../../image/icon/zls.png" mode="widthFix" /></view>
@@ -85,8 +85,9 @@
         <view class="detail_data">2019/12/20</view>
    </view>
    </view>
-   </navigator>
+   </view>
+<navigator url="../schoolNews/index">
 <view class="index_footer">
     <text>查看更多</text>
 </view>
-  
+</navigator>

@@ -271,6 +271,13 @@
 					"id": -1,
 					"name": "pages/schoolNews/index",
 					"pathName": "pages/schoolNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/index",
+					"pathName": "pages/home/index",
 					"scene": null
 				}
 			]

@@ -5,22 +5,23 @@
 	<!-- 详情 -->
 	<view class="contents">
 		<view class="header">
-    <view class="title">{{lists.projectName}}项目简介</view>
-    	
-		<view class="set middle" bindtap="handleToComment">
-				<view class="share" bindtap="handleChange">
-					<image src="../../image/icon/message.png" mode="widthFix" />
+			<view class="title">{{lists.projectName}}项目简介</view>
+			<view>
+				<view class="set middle" bindtap="handleToComment">
+					<view class="share" bindtap="handleChange">
+						<image src="../../image/icon/message.png" mode="widthFix" />
+					</view>
+					<text>{{lists.commentNums}}</text>
 				</view>
-				<text>{{lists.commentNums}}</text>
-			</view>
-		
-			<view class="set left" bindtap="handlelikeStart">
-				<view class="share">
-					<image  src="{{!!status?url2:url1}}"  mode="widthFix" />
+
+				<view class="set left" bindtap="handlelikeStart">
+					<view class="share">
+						<image src="{{!!status?url2:url1}}" mode="widthFix" />
+					</view>
+					<text>{{lists.likeNums}}</text>
 				</view>
-				<text>{{lists.likeNums}}</text>
 			</view>
-   </view>
+		</view>
 		<view class="content">
 			{{lists.leaderIntroduction}}
 		</view>
@@ -44,3 +45,4 @@
 <view class="contactMe">
 	<view class="btn">联系我们</view>
 </view>
+

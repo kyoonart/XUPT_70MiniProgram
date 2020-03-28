@@ -12,13 +12,12 @@ page {
   justify-content: space-between;
 }
 .contents .header .title {
-  flex: 2;
+  flex: 3;
   font-size: 24rpx;
   color: #014A95;
   margin-left: -44rpx;
 }
 .contents .header .set {
-  flex: 1;
   height: 30rpx;
 }
 .contents .header .set .share {
@@ -35,4 +34,10 @@ page {
 .contents .data {
   font-size: 18rpx;
   margin-left: -40rpx;
+}
+.middle {
+  margin-right: -55rpx;
+}
+.left {
+  margin-top: -5rpx;
 }

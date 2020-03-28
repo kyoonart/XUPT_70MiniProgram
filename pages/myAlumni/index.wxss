@@ -29,7 +29,7 @@
 .navbar-item-active {
     transition: all 0.3s;
     color: #ffffff;
-    background-color: #014A95;
+    background-color: #0142a9;
     border: 0;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .news_title {
-    color: #014A95;
+    color: #0241a9;
     text-align: center;
 }
 
@@ -61,4 +61,5 @@
 
 .img-textarea {
     padding: 10rpx;
+    width: 690rpx;
 }

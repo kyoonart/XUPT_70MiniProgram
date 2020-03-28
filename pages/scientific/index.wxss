@@ -13,18 +13,18 @@ page .contents .header {
   justify-content: space-between;
 }
 page .contents .header .title {
-  flex: 2;
+  flex: 3;
   font-size: 24rpx;
   color: #014A95;
   margin-left: -44rpx;
 }
 page .contents .header .set {
-  flex: 1;
+  display: inline-block;
   height: 30rpx;
 }
 page .contents .header .set .share {
-  width: 31rpx;
-  height: 32rpx;
+  width: 30rpx;
+  height: 30 rpx;
   display: inline-block;
   vertical-align: middle;
 }
@@ -99,4 +99,10 @@ page .contents .more .more_title {
   float: right;
   margin-right: 30rpx ;
   margin-top: 25rpx;
+}
+.middle {
+  margin-right: -60rpx;
+}
+.left {
+  margin-top: -5rpx;
 }

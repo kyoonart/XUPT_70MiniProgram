@@ -1,7 +1,7 @@
 /**index.wxss**/
 
 .container {
-    background-image: url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
+    background-image: url("https://s1.ax1x.com/2020/03/28/GkM0nx.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -12,6 +12,10 @@
     flex-direction: column;
     align-items: center;
     height: 200rpx;
+}
+
+.user-infomation {
+    background-color: #fff;
 }
 
 .userinfo-avatar {
@@ -32,7 +36,7 @@
 }
 
 .userinfo-nickname {
-    color: #aaa;
+    color: #ffff;
 }
 
 .usermotto {
@@ -45,4 +49,22 @@
     justify-content: space-between;
     padding: 10px;
     border-bottom: 0.1rpx solid #ccc;
+}
+
+.box {
+    display: inline-block;
+    margin-left: 20rpx;
+}
+
+.box text {
+    color: #636363;
+    font-size: 24rpx;
+}
+
+.box .boximg {
+    display: inline-block;
+    width: 46rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
 }

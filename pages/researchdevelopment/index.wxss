@@ -15,9 +15,8 @@
     position: absolute;
     font-size: 24rpx;
     bottom: 24rpx;
-    text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .4);
 }
 
 .img_detail {
@@ -30,6 +29,7 @@
 
 .img-textarea {
     padding: 10rpx;
+    width: 690rpx;
 }
 
 .liked {

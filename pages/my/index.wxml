@@ -12,16 +12,25 @@
 </view>
 
 <view class='user-infomation' bindtap='bindAcountTap'>
-  <view>账号信息</view>
-  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+  <view class="box">
+  <view class="boximg"><image src="../../image/icon/account.png" mode="widthFix"/></view>
+  <text>账号信息</text>
+  </view>
+  <image   style='height:20rpx;width:20rpx; margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
 </view>
 
 <view class='user-infomation' bindtap='bindBasicTap'>
-  <view>基本信息</view>
-  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+ <view class="box">
+  <view class="boximg"><image src="../../image/icon/account.png" mode="widthFix"/></view>
+  <text>基本信息</text>
+  </view>
+  <image style='height:20rpx;width:20rpx;margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
 </view>
 
 <view class='user-infomation' bindtap='bindCallTap'>
-  <view>联系方式</view>
-  <image style='height:20rpx;width:20rpx;' src='../../image/icon/youjian.png'></image>
+ <view class="box">
+  <view class="boximg"><image src="../../image/icon/phone.png" mode="widthFix"/></view>
+  <text>联系方式</text>
+  </view>
+  <image   style='height:20rpx;width:20rpx;margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
 </view>

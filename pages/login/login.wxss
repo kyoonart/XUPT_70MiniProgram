@@ -1,7 +1,7 @@
 page {
-    background-image: url("https://ketingl-1256819531.cos.ap-chengdu.myqcloud.com/XUPT-70Simage/image/login.png");
+    background-image: url("https://s1.ax1x.com/2020/03/28/GkM0nx.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 105%;
     -moz-background-size: 100% 100%;
     height: 100%;
 }

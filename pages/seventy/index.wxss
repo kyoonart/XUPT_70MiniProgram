@@ -2,28 +2,27 @@
     padding: 10rpx 30rpx;
 }
 
-
 .img-container {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
     padding: 10rpx 30rpx;
 }
 
 .news_title {
-  color: #014A95;
-  text-align: center;
+    color: #0142a9;
+    text-align: center;
 }
 
-.img-text{
-  height: 60rpx;  
-  position: absolute;
-  font-size:24rpx;
-  bottom: 24rpx;
-  text-align: center;
-  color: #fff;
-  background:rgba(255,255,255,.3);
+.img-text {
+    height: 60rpx;
+    position: absolute;
+    font-size: 24rpx;
+    bottom: 24rpx;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
 }
 
-.img-textarea{
-  padding: 10rpx;
+.img-textarea {
+    padding: 10rpx;
+    width: 690rpx;
 }

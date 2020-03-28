@@ -115,5 +115,5 @@
 		立即验证
 	</button>
 	</form>
-	<button   class="weui-btn back"  bindtap="handleBack" style='width:520rpx;background-color:#fff;color:#0142AA;font-weight:bold;' type="primary">取消</button>
+	<button   class="back"  bindtap="handleBack" style='width:520rpx;color:#fff;font-weight:bold;background-color:transparent;' type="primary">取消</button>
 </view>
