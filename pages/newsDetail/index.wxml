@@ -13,7 +13,7 @@
 			</view>
 			<view class="set left" bindtap = "handlelikeStart">
 				<view class="share">
-				<image  src="{{!!status?url2:url1}}"  mode="widthFix" />
+				<image class="img" src="{{!!status?url2:url1}}"  mode="widthFix" />
 				</view>
 				<text>{{likeNums}}</text>
 			</view>

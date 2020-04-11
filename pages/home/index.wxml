@@ -25,49 +25,53 @@
 <!-- 导航 -->
 <view class="index-navbar clearfix">
 	<navigator url="../profile/index" open-type="navigate">
-		<view >
+		<view  class="item">
 	<view class="navbar_img">
 			<image src="../../image/icon/school.png" mode="widthFix" />
 		</view>
-		<text>学校概况</text>
+		<view class="title">学校概况</view>
 	</view>
 	</navigator>
 	<navigator url="../schoolNews/index">
-	<view>
+		<view  class="item">
 		<view class="navbar_img">
 			<image src="../../image/icon/news.png" mode="widthFix" />
 		</view>
-		<text>学校新闻</text>
+		<view  class="title">学校新闻</view>
 	</view>
 	</navigator>
 	<navigator url="../backSchoolMap/index">
-	<view>
+		<view  class="item">
 		<view class="navbar_img">
 			<image src="../../image/icon/map.png" mode="widthFix" />
 		</view>
-		<text>返校指南</text>
+		<view  class="title">返校指南</view>
 	</view>
 	</navigator>
+		<navigator url="../myAlumni/index">
 	<view bindtap="handleVer">
+  <view class="item">
 		<view class="navbar_img">
 			<image src="../../image/icon/mcs.png" mode="widthFix" />
 		</view>
-		<text>我的校友</text>
+		<view  class="title">我的校友</view>
+		</view>
 	</view>
+	</navigator>
 	<navigator url="../researchdevelopment/index">
-	<view>
+	<view  class="item">
 	<view class="navbar_img">
 			<image src="../../image/icon/tac.png" mode="widthFix" />
 		</view>
-		<text>科研研发</text>
+		<view  class="title">科研研发</view>
 	</view>
 	</navigator>
 	<navigator url="../index/index">
-	<view>
+	<view  class="item">
 	<view class="navbar_img">
 			<image src="../../image/icon/safe.png" mode="widthFix" />
 		</view>
-		<text>校友验证</text>
+		<view  class="title">校友验证</view>
 	</view>
 	</navigator>
 </view>

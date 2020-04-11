@@ -11,12 +11,11 @@
 				</view>
 				<text>{{commentNums}}</text>
 			</view>
-        
 			<view class="set left" bindtap = "handlelikeStart">
 				<view class="share">
-				<image  src="{{!!status?url2:url1}}"  mode="widthFix" />
+				<image class="img" src="{{!!status?url2:url1}}"  mode="widthFix" />
 				</view>
-				<text>{{likeNums}}</text>
+				<text class="likenums">{{likeNums}}</text>
 			</view>
    </view>
     <view class="data">{{createTime}}</view> 

@@ -3,25 +3,21 @@
 }
 .banner {
   display: flex;
-  width: 690rpx;
-  margin-left: 58rpx;
+  justify-items: center;
+  justify-content: space-between;
   margin-top: 44rpx;
 }
 .banner .banner_content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
 }
 .banner .banner_content .content_img {
+  margin: 0 auto;
   width: 60rpx;
   height: 60rpx;
 }
 .banner .banner_content .content_title {
-  margin-left: -20rpx;
-}
-.banner .banner_content .content_title text {
+  margin-top: 10rpx;
+  text-align: center;
   color: #636363;
   font-size: 24rpx;
 }

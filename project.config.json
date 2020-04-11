@@ -278,6 +278,13 @@
 					"id": -1,
 					"name": "pages/home/index",
 					"pathName": "pages/home/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activeDetitle/index",
+					"pathName": "pages/activeDetitle/index",
 					"scene": null
 				}
 			]

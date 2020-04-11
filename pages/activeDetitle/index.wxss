@@ -12,6 +12,7 @@
     .contents .header {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     
     .contents .header .title {
@@ -29,6 +30,7 @@
     .contents .header .set .share {
         width: 31rpx;
         height: 32rpx;
+        line-height: 32rpx;
         display: inline-block;
         vertical-align: middle;
     }
@@ -36,6 +38,7 @@
     .contents .header .set text {
         color: #8D8D8D;
         font-size: 20rpx;
+        line-height: 20rpx;
         margin-left: 46rpx;
     }
     
@@ -45,13 +48,16 @@
     }
     
     .middle {
-        position: relative;
-        right: -140rpx;
+        position: absolute;
+        right: 120rpx;
     }
     
     .left {
-        position: relative;
-        right: -40rpx;
+        position: absolute;
         vertical-align: bottom;
-        top: -5rpx;
+        right: 30rpx;
+    }
+    
+    .img {
+        margin-top: -5rpx;
     }
