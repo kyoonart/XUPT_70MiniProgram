@@ -1,108 +1,134 @@
 page {
-  padding: 10rpx 30rpx;
+    padding: 10rpx 30rpx;
 }
+
 page .contents {
-  color: #8D8D8D;
-  font-size: 20rpx;
-  text-indent: 40rpx;
-  text-align: left;
-  margin-bottom: 42rpx;
+    color: #8D8D8D;
+    font-size: 20rpx;
+    text-indent: 40rpx;
+    text-align: left;
+    margin-bottom: 42rpx;
 }
+
 page .contents .header {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 page .contents .header .title {
-  flex: 3;
-  font-size: 24rpx;
-  color: #014A95;
-  margin-left: -44rpx;
+    flex: 3;
+    font-size: 24rpx;
+    color: #014A95;
+    margin-left: -44rpx;
 }
+
 page .contents .header .set {
-  display: inline-block;
-  height: 30rpx;
+    display: inline-block;
+    height: 30rpx;
 }
+
 page .contents .header .set .share {
-  width: 30rpx;
-  height: 30 rpx;
-  display: inline-block;
-  vertical-align: middle;
+    width: 30rpx;
+    height: 30 rpx;
+    display: inline-block;
+    vertical-align: middle;
 }
+
 page .contents .header .set text {
-  color: #8D8D8D;
-  font-size: 20rpx;
-  margin-left: 46rpx;
+    color: #8D8D8D;
+    font-size: 20rpx;
+    margin-left: 46rpx;
 }
+
 page .contents .data {
-  font-size: 18rpx;
-  margin-left: -40rpx;
+    font-size: 18rpx;
+    margin-left: -40rpx;
 }
+
 page .contents .title {
-  flex: 2;
-  font-size: 24rpx;
-  color: #014A95;
-  margin-left: -44rpx;
+    flex: 2;
+    font-size: 24rpx;
+    color: #014A95;
+    margin-left: -44rpx;
 }
+
 page .contents .content {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  white-space: normal !important;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
+
 page .contents .more .arrow {
-  width: 18rpx;
-  height: 18rpx;
-  border-top: 2rpx solid #999;
-  border-right: 2rpx solid #999;
-  position: absolute;
-  right: 40rpx;
-  transform: rotate(135deg);
+    width: 18rpx;
+    height: 18rpx;
+    border-top: 2rpx solid #999;
+    border-right: 2rpx solid #999;
+    position: absolute;
+    right: 40rpx;
+    transform: rotate(135deg);
 }
+
 page .contents .more .more_title {
-  float: right;
-  margin-right: 48rpx;
+    float: right;
+    margin-right: 48rpx;
 }
+
 .teamContent .team_style {
-  color: #014A95;
-  font-size: 24rpx;
-  margin-top: 20rpx;
+    color: #014A95;
+    font-size: 24rpx;
+    margin-top: 20rpx;
 }
+
 .teamContent .team_detail {
-  margin-top: 20rpx;
+    margin-top: 20rpx;
 }
+
 .teamContent .team_detail .team_mainPerson {
-  color: #014A95;
+    color: #014A95;
 }
+
 .teamContent .team_detail view {
-  color: #8D8D8D;
-  font-size: 20rpx;
+    color: #8D8D8D;
+    font-size: 20rpx;
 }
+
 .contactMe {
-  width: 100%;
-  height: 90rpx;
-  line-height: 90rpx;
-  border-top: 2rpx solid #ccc;
-  margin-top: 30rpx;
-  padding: 0;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-top: 2rpx solid #ccc;
+    margin-top: 30rpx;
+    padding: 0;
 }
+
 .contactMe .btn {
-  width: 150rpx;
-  height: 60rpx;
-  background-color: #007EFF;
-  border-radius: 10rpx;
-  color: #fff;
-  text-align: center;
-  line-height: 60rpx;
-  float: right;
-  margin-right: 30rpx ;
-  margin-top: 25rpx;
+    width: 150rpx;
+    height: 60rpx;
+    background-color: #007EFF;
+    border-radius: 10rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 60rpx;
+    float: right;
+    margin-right: 30rpx;
+    margin-top: 25rpx;
 }
+
 .middle {
-  margin-right: -60rpx;
+    position: absolute;
+    right: 120rpx;
 }
+
 .left {
-  margin-top: -5rpx;
+    position: absolute;
+    vertical-align: bottom;
+    right: 30rpx;
+}
+
+.img {
+    margin-top: -5rpx;
 }
