@@ -56,7 +56,6 @@ Page({
                             dataType: 'json',
                             responseType: 'text',
                             success: (result) => {
-                                console.log(result);
                                 let token = result.data.data.token;
                                 let openId = result.data.data.userInfo.openid
                                 let verifyStatus = result.data.data.userInfo.verifyStatus

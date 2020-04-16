@@ -21,7 +21,7 @@
 		</view>
 		<view class="content" >
 			<view>获取您的信息...</view>
-			<text>西邮校友为广大校友建立通知、互动功活动展示平台</text>
+			<text>西邮校友为广大校友建立通知、互动功能活动展示平台</text>
 		</view>
 		<button class="btn" bindtap="bindChange">立即登录</button>
 	</view>

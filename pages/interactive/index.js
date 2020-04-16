@@ -38,7 +38,7 @@ Page({
         let verifyStatus = wx.getStorageSync('verifyStatus');
         if (verifyStatus == 0) {
             wx.showToast({
-                title: '请您先进行校友验证',
+                title: '请您在首页进行校友验证',
                 icon: 'none',
                 image: '',
                 duration: 1000,

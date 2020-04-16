@@ -11,7 +11,9 @@
   text-align: left;
 }
 .title {
-  font-size: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
   color: #014A95;
   border-left: 4rpx solid #014A95;
   padding-left: 6rpx;
