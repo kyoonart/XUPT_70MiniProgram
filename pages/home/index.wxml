@@ -48,7 +48,7 @@
 		<view  class="title">返校指南</view>
 	</view>
 	</navigator>
-		<navigator url="../myAlumni/index">
+		<navigator>
 	<view bindtap="handleVer">
   <view class="item">
 		<view class="navbar_img">
