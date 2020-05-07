@@ -10,11 +10,11 @@
 		<swiper-item wx:for="{{imgUrl}}" wx:key="id">
 			<image src="{{base}}{{item.imgUrl}}" mode="widthFix" />
 		</swiper-item>
-		
-	</swiper>  
+
+	</swiper>
 </view>
 <!-- 通知 -->
-<view class="index_info" bindtap = "handleChange">
+<view class="index_info" bindtap="handleChange">
 	<view class="info_content">
 		<view class="info_img">
 			<image src="../../image/icon/speak.png" mode="widthFix" />
@@ -25,73 +25,78 @@
 <!-- 导航 -->
 <view class="index-navbar clearfix">
 	<navigator url="../profile/index" open-type="navigate">
-		<view  class="item">
-	<view class="navbar_img">
-			<image src="../../image/icon/school.png" mode="widthFix" />
+		<view class="item">
+			<view class="navbar_img">
+				<image src="../../image/icon/school.png" mode="widthFix" />
+			</view>
+			<view class="title">学校概况</view>
 		</view>
-		<view class="title">学校概况</view>
-	</view>
 	</navigator>
 	<navigator url="../schoolNews/index">
-		<view  class="item">
-		<view class="navbar_img">
-			<image src="../../image/icon/news.png" mode="widthFix" />
+		<view class="item">
+			<view class="navbar_img">
+				<image src="../../image/icon/news.png" mode="widthFix" />
+			</view>
+			<view class="title">学校新闻</view>
 		</view>
-		<view  class="title">学校新闻</view>
-	</view>
 	</navigator>
 	<navigator url="../backSchoolMap/index">
-		<view  class="item">
-		<view class="navbar_img">
-			<image src="../../image/icon/map.png" mode="widthFix" />
+		<view class="item">
+			<view class="navbar_img">
+				<image src="../../image/icon/map.png" mode="widthFix" />
+			</view>
+			<view class="title">返校指南</view>
 		</view>
-		<view  class="title">返校指南</view>
-	</view>
 	</navigator>
-		<navigator>
-	<view bindtap="handleVer">
-  <view class="item">
-		<view class="navbar_img">
-			<image src="../../image/icon/mcs.png" mode="widthFix" />
+	<navigator>
+		<view bindtap="handleVer">
+			<view class="item">
+				<view class="navbar_img">
+					<image src="../../image/icon/mcs.png" mode="widthFix" />
+				</view>
+				<view class="title">我的校友</view>
+			</view>
 		</view>
-		<view  class="title">我的校友</view>
-		</view>
-	</view>
 	</navigator>
 	<navigator url="../researchdevelopment/index">
-	<view  class="item">
-	<view class="navbar_img">
-			<image src="../../image/icon/tac.png" mode="widthFix" />
+		<view class="item">
+			<view class="navbar_img">
+				<image src="../../image/icon/tac.png" mode="widthFix" />
+			</view>
+			<view class="title">科研研发</view>
 		</view>
-		<view  class="title">科研研发</view>
-	</view>
 	</navigator>
 	<navigator url="../index/index">
-	<view  class="item">
-	<view class="navbar_img">
-			<image src="../../image/icon/safe.png" mode="widthFix" />
+		<view class="item">
+			<view class="navbar_img">
+				<image src="../../image/icon/safe.png" mode="widthFix" />
+			</view>
+			<view class="title">校友验证</view>
 		</view>
-		<view  class="title">校友验证</view>
-	</view>
 	</navigator>
 </view>
 <!-- 大图 -->
 <view class="index_bigimg">
-    <image src="https://s1.ax1x.com/2020/03/20/8gegE9.png"  mode="widthFix"/>
+	<image src="https://s1.ax1x.com/2020/03/20/8gegE9.png" mode="widthFix" />
 </view>
 <view class="index_news">
-    <view class="news_title"><text>······ 新闻中心 ······</text></view>
-   <view class="news_content">
-        <view class="news_img"><image src="../../image/icon/zls.png" mode="widthFix" /></view>
-        <view class="news_detail">
-        <view class="detail_title">我校召开疫情防控工作部署会</view>
-        <view class="detail_main">学校召开新型冠状病毒感染肺炎疫情防控工 作领导小组工作会议，进一步研究细化了学 校疫情防控工作方案和应急预</view>
-        <view class="detail_data">2019/12/20</view>
-   </view>
-   </view>
-   </view>
-<navigator url="../schoolNews/index">
-<view class="index_footer">
-    <text>查看更多</text>
+	<view class="news_title">
+		<text>······ 新闻中心 ······</text>
+	</view>
+	<view class="news_content">
+		<view class="news_img">
+			<image src="../../image/icon/zls.png" mode="widthFix" />
+		</view>
+		<view class="news_detail">
+			<view class="detail_title">我校召开疫情防控工作部署会</view>
+			<view class="detail_main">学校召开新型冠状病毒感染肺炎疫情防控工 作领导小组工作会议，进一步研究细化了学 校疫情防控工作方案和应急预</view>
+			<view class="detail_data">2019/12/20</view>
+		</view>
+	</view>
 </view>
+<navigator url="../schoolNews/index">
+	<view class="index_footer">
+		<text>查看更多</text>
+	</view>
 </navigator>
+

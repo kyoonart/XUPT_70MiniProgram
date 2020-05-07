@@ -15,3 +15,18 @@
 ├── thirdparty // 第三方框架，引入WeUI
 └── utils // 工具函数
 ```
+
+项目部分截图
+
+![image-20200507203233238](https://i.loli.net/2020/05/07/NgaAQ9oMUPV27dG.png)
+
+![image-20200507202514954](https://i.loli.net/2020/05/07/nTNDRVwCY2i3ks8.png)
+
+![image-20200507202950382](https://i.loli.net/2020/05/07/WwtI96dNYbmLiQr.png)
+
+
+
+![image-20200507202546857](https://i.loli.net/2020/05/07/Rv5rZqYMDC82JHG.png)
+
+![image-20200507203323129](https://i.loli.net/2020/05/07/GsgqBvlXAn5QU23.png)
+

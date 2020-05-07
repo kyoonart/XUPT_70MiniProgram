@@ -1,7 +1,7 @@
 import { request } from '../../utils/request.js';
 Page({
     data: {
-        imgUrl: [],
+        imgUrl: ['https://s1.ax1x.com/2020/05/07/YmkSX9.png', 'https://s1.ax1x.com/2020/05/07/YmkM7t.png'],
         base: 'https://xiaoyou.oubamall.com'
     },
     onLoad: function() {
